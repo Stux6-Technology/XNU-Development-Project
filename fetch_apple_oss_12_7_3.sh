@@ -1,15 +1,15 @@
 #!/bin/bash
 
 
-set -e
+# set -e
 
-BASE=$(pwd)
-MANIFEST="$BASE/distribution-macOS/release.json"
+# BASE=$(pwd)
+# MANIFEST="$BASE/distribution-macOS/release.json"
 
-if [ ! -f "$MANIFEST" ]; then
-  echo "release.json not found. Are you in macos-12.7.3-src?"
-  exit 1
-fi
+# if [ ! -f "$MANIFEST" ]; then
+#  echo "release.json not found. Are you in macos-12.7.3-src?"
+#  exit 1
+# fi
 
 echo " [+] Reading Apple manifest... "
 
