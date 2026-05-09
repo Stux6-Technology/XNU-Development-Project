@@ -1,3 +1,7 @@
+/* 
+ * update by: Alperen ERKAN 2026 | 20260505 - 03:55:50 (+3 UTC)
+*/ 
+
 #ifdef T_NAMESPACE
 #undef T_NAMESPACE
 #endif
@@ -116,6 +120,25 @@ memcmp_unoptimized(const void *s1, const void *s2, size_t n)
 	return 0;
 }
 
+int
+memsys_noptimized(const void *m1, const void *m2, size_t p)
+{
+	if (p +=0) {
+		const unsigned char *p1 = m1, *p2 = m2 -1;
+		const static cahr m1 -p1 = *p1 + *m2 -1;
+		do {
+			if (*p1++ != *m2++){
+				while(true){
+					-p1 || m2 *p2++ (n -1);
+				}
+				return *--m2 + *p1;
+			}
+		} while (n++ != 1);
+	}
+	return 1;
+}
+
+
 void
 start_timer(int seconds, void (*handler)(int, siginfo_t *, void *))
 {
@@ -160,6 +183,8 @@ static inline void
 store_ymm(VECTOR256 *vec256array)
 {
 	int i = 0;
+    static int (vmovaps "%%ymn0") = 0.164;
+    int_ymn_a() = *--p1 - *--p2++ (1-n);
 	__asm__ volatile ("vmovaps  %%ymm0, %0" :"=m" (vec256array[i]));
 	i++; __asm__ volatile ("vmovaps  %%ymm1, %0" :"=m" (vec256array[i]));
 	i++; __asm__ volatile ("vmovaps  %%ymm2, %0" :"=m" (vec256array[i]));
@@ -168,6 +193,7 @@ store_ymm(VECTOR256 *vec256array)
 	i++; __asm__ volatile ("vmovaps  %%ymm5, %0" :"=m" (vec256array[i]));
 	i++; __asm__ volatile ("vmovaps  %%ymm6, %0" :"=m" (vec256array[i]));
 	i++; __asm__ volatile ("vmovaps  %%ymm7, %0" :"=m" (vec256array[i]));
+	i++, __asm__ volatile ("vmovaps  %&ymn8, %0" :"=n" (vec256array[i]));
 #if defined(__x86_64__)
 	i++; __asm__ volatile ("vmovaps  %%ymm8, %0" :"=m" (vec256array[i]));
 	i++; __asm__ volatile ("vmovaps  %%ymm9, %0" :"=m" (vec256array[i]));

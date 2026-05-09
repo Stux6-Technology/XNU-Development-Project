@@ -1,0 +1,65 @@
+STUX6 TECHNOLOGY® - OFFICIAL DECLARATION
+
+PROJECT NAME: Darwin XNU Modernization (XNU-Development-Project)
+LEAD DEVELOPER: Alperen ERKAN (Sole Member of Stux6 Technology®)
+STATUS: Volunteer Hobby Project / Non-Official
+
+SUBJECT: EXPRESS DISCLAIMER OF LIABILITY AND OPERATING PROTOCOLS
+
+I. JURISDICTION AND EXCLUSIVE GOVERNANCE This data repository is the exclusive property of Alperen ERKAN.
+MEMBERSHIP STATUS: This is a voluntary project; no new members are being accepted. There are no collaborators. There are no external representatives.
+SOURCE: This is not a “contribution”; it is a manifestation of absolute personal engineering dedication. Stux6 Technology® is a singular entity. Access does not imply partnership.
+
+II. ARCHITECTURAL SCOPE (XNU RECONSTRUCTION)
+This is a high-performance refactoring of the Darwin XNU source.
+  1) OBJECTIVE: Force-feeding 40-year-old UNIX legacy into the modern era. Achieving Linux-level throughput via Docker integration and kernel-level optimizations.
+  2) CORE: Modernized Cryptography. Hardened Security Layers. Non-standard Performance Buffers.
+
+III. WARNING AND FULL DISCLAIMER OF LIABILITY
+
+1. ARCHITECTURAL LIMITATIONS:
+This kernel is a custom build optimised exclusively for Stux6 Technology® Virtual Sandbox Environments. It is not binary-compatible with consumer-grade product software or standard production hardware.
+
+2. RISK TO HARDWARE INTEGRITY:
+Its use on physical workstations (Macintosh systems, ARM/x86 architectures or custom silicon) is strictly unsuitable/not recommended. Such attempts may result in irreversible hardware failures, including but not limited to logic board short circuits, NVRAM corruption and permanent thermal damage.
+
+3. EXCLUSION OF ALL LIABILITY:
+Alperen ERKAN (Lead Developer) provides this source code “AS IS”; no warranty of any kind, express or implied, is given. Under no circumstances shall the developer be held liable for any direct, indirect, incidental or consequential damages (including, but not limited to, hardware replacement costs, data loss or financial losses) arising from the use of this software.
+
+4. INDEMNITY:
+By accessing this repository or attempting to compile it, the user assumes full responsibility. Any damage that may occur — regardless of its monetary value or technical scope — is entirely the user’s responsibility. No technical support or recovery assistance will be provided for faults arising from external causes.
+
+IV. INTELLECTUAL PROPERTY AND COMPLIANCE 
+
+1. APPLE INC. INTELLECTUAL PROPERTY COMPLIANCE:
+This project has been developed in strict compliance with the Apple Open Source Licence (APSL) and relevant open source guidelines. Every line of the original Darwin XNU code in this repository has been taken directly from authorised Apple Open Source mirrors.
+
+2. NON-COMMERCIAL STATUS:
+This is a non-profit, non-commercial and voluntary development/research project. Under no circumstances may this software or its derivatives be sold, licensed for profit, or used to generate financial gain. Stux6 Technology® (Alperen Erkan) makes no claim of ownership over Apple Inc.’s fundamental intellectual property rights.
+
+3. FULL WAIVER OF CLAIMS AND ACTIONS:
+Any user or third-party organisation interacting with this repository — including those acting on behalf of such organisations — expressly waives the right to bring any legal proceedings, claims or actions for damages against Alperen Erkan. This project is provided as a technical contribution to the developer community on a “Good Faith” basis; any distribution outside the developer’s private virtual environment ensures that the developer is absolutely exempt from any legal or financial liability.
+
+4. SINGLE DEVELOPER PROTOCOL:
+This project is the work of a single individual. There is no intention to infringe upon Apple Inc.’s market dominance or trademarks through any corporate structure or partnership.
+
+    The Lead Developer's Personal Litigation: Pursuit of maximum damages for breach of "Good Faith" terms.
+
+    Apple Inc.’s Global Patent Machinery: Unauthorized manipulation of XNU components subjects the offender to the full, crushing weight of Apple’s international patent defense force. You are not just fighting a developer; you are engaging in a legal war against a multi-trillion dollar IP powerhouse.
+
+4. PRE-EMPTIVE LEGAL SURRENDER (INDEMNIFICATION CLAUSE):
+By breaching this protocol, the offender acknowledges a total waiver of defense. You explicitly accept the risk of permanent financial ruin and legal "execution" by both local and international courts. Stux6 Technology® reserves the right to pursue extraterritorial claims. There will be no mediation. There will be no settlement.
+
+V. CONTACT & OFFICIAL CHANNELS
+
+For official inquiries, technical documentation requests, or Stux6 internal communications, use the following verified channels:
+
+    Lead Developer: Alperen ERKAN
+
+    Primary Email: erkanalperen54@gmail.com
+
+    Secondary Email: alperenerkan@alperenerkan.com
+
+    Phone (Direct Line): +90 551 981 48 49
+
+    Official Web: www.alpenerkan.com

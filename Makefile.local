@@ -1,0 +1,16 @@
+.PHONY: build-host dev-shell analyze-devtools tags-dev run-kernel-iso
+
+build-host:
+	./scripts/build-xnu.sh
+
+dev-shell:
+	docker compose run --rm dev
+
+analyze-devtools:
+	./scripts/analyze-in-docker.sh
+
+tags-dev:
+	docker compose run --rm dev bash -lc 'make tags cscope'
+
+run-kernel-iso:
+	docker compose up --build qemu-kernel

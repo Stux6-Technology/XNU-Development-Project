@@ -1,0 +1,30 @@
+version: "3.9" # ver. 3.9+ 
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.devtools
+    image: xnu-devtools:local
+    container_name: xnu-devtools
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    tty: true
+    stdin_open: true
+    command: bash # macOS to Zshell
+
+  qemu-kernel:
+    build:
+      context: .
+      dockerfile: docker/qemu/Dockerfile
+    image: xnu-qemu:local
+    container_name: xnu-qemu-kernel
+    environment:
+      ISO_PATH: /docker/linux/kernel.iso
+      RAM_MB: "6130" # min 6GB RAM
+      CPUS: "6" # min 6 CPU Core
+    volumes:
+      - ./docker/linux:/vm/iso:ro
+    tty: true
+    stdin_open: true
