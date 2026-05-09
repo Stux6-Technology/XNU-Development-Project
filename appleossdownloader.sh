@@ -1,6 +1,43 @@
 #!/bin/bash
 
-printf(" [*] Dont't Running Shell...")
+# Colors
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+GREEN='\033[0;32m'
+NC='\033[0m' 
+
+# Animation
+echo -ne "${RED}[*] Don't Running Shell"
+for i in {1..3}; do
+    sleep 1
+    echo -ne "${RED}."
+done
+echo -e "${NC}"
+
+echo -e "\n${YELLOW}Critical${NC}"
+echo -e "This script will initiate the process of downloading and configuring Apple OSS resources."
+echo -e "--------------------------------------------------------------------------"
+echo -e "${GREEN}1)${NC} Continue "
+echo -e "${RED}2)${NC} End Process"
+echo -e "--------------------------------------------------------------------------"
+
+read -p "Your choice [1-2]: " choice
+
+case $choice in
+    1)
+        echo -e "\n${GREEN}[+]${NC} The transaction has been confirmed. Reading the Apple manifest..."
+        # general codes
+        ;;
+    2)
+        echo -e "\n${RED}[!] The transaction was forcibly closed...${NC}"
+        echo -e "${YELLOW}[*] The Stux6-Technology Security Protocol has been implemented.${NC}"
+        exit 1
+        ;;
+    *)
+        echo -e "\n${RED}[X] Invalid selection. A safe exit is being performed for security reasons...${NC}"
+        exit 1
+        ;;
+esac
 
 # set -e
 
