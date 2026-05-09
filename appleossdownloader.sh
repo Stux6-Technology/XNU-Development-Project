@@ -1,5 +1,6 @@
 #!/bin/bash
 
+printf(" [*] Dont't Running Shell...")
 
 # set -e
 
@@ -11,36 +12,35 @@
 #  exit 1
 # fi
 
-echo " [+] Reading Apple manifest... "
+# echo " [+] Reading Apple manifest... "
 
-python3 - << 'PYEOF'
-import json, subprocess, os
+# python3 - << 'PYEOF'
+# import json, subprocess, os
 
-with open("distribution-macOS/release.json") as f:
-    data = json.load(f)
+# with open("distribution-macOS/release.json") as f:
+#    data = json.load(f)
 
-projects = data.get("projects", {})
+# projects = data.get("projects", {})
 
-os.makedirs("apple-src", exist_ok=False) # LOOK This is True !!
-os.chdir("apple-src")
+# os.makedirs("apple-src", exist_ok=False) # LOOK This is True !! 
+# os.chdir("apple-src")
 
-for name, info in projects.items():
-    repo = info.get("project")
-    tag  = info.get("tag")
+# for name, info in projects.items():
+#    repo = info.get("project")
+#    tag  = info.get("tag")
 
-    if not repo or not tag:
-        continue
+#    if not repo or not tag:
+#        continue
 
-    # You write of repo !!!
-    url = f"https://github.com/apple-oss-distributions/{repo}.git"
+#    url = f"https://github.com/apple-oss-distributions/{repo}.git"
 
-    print(f"[+] {repo} @ {tag}")
+# print(f"[+] {repo} @ {tag}")
 
-    if not os.path.exists(repo):
-        subprocess.run(["git", "clone", url], check=True)
+#   if not os.path.exists(repo):
+#       subprocess.run(["git", "clone", url], check=True)
 
-    os.chdir(repo)
-    subprocess.run(["git", "fetch", "--tags"], check=True)
-    subprocess.run(["git", "checkout", tag], check=True)
-    os.chdir("..")
-PYEOF
+#   os.chdir(repo)
+#   subprocess.run(["git", "fetch", "--tags"], check=True)
+#   subprocess.run(["git", "checkout", tag], check=True)
+#   os.chdir("..")
+# PYEOF
