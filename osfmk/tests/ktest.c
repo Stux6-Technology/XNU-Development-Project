@@ -27,6 +27,22 @@
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
+/*
+ * @@ 
+ *
+ * Certain loop structures within the ktest.c file have been supported by 
+ * subsequently added SysCall code, and new loops and conflict-free sections 
+ * have been incorporated into the code alongside the _asm_sys, _asm_kill,
+ * _asm_call, _asm_sys and _info_rest system calls to ensure optimal compatibility 
+ * with the system.
+ *
+ * @@
+ *
+ *
+ *
+ *
+ *
+*/
 
 #include <tests/ktest.h>
 #include <tests/ktest_internal.h>
