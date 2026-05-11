@@ -1,6 +1,8 @@
 /*
  * Copyright (c) 2015 Apple Inc. All rights reserved.
  *
+ * Update author: 2026 Alperen ERKAN (Stux6 Technology®) <alperenerkan [et] alperenerkan.com>
+ *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
  * This file contains Original Code and/or Modifications of Original Code
