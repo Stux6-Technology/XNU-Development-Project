@@ -29,7 +29,7 @@
  * Copyright (c) 1999-2002 Robert N. M. Watson
  * Copyright (c) 2001-2005 Networks Associates Technology, Inc.
  * Copyright (c) 2005-2007 SPARTA, Inc.
- * All rights reserved.
+ *  All rights reserved.
  *
  * This software was developed by Robert Watson for the TrustedBSD Project.
  *
