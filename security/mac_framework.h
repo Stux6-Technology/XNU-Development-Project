@@ -25,7 +25,7 @@
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
-/*-
+/* 
  * Copyright (c) 1999-2002 Robert N. M. Watson
  * Copyright (c) 2001-2005 Networks Associates Technology, Inc.
  * Copyright (c) 2005-2007 SPARTA, Inc.
