@@ -69,7 +69,7 @@
  * 	
  * 	movl _foo(%rip), %eax
  * 		r_type=X86_64_RELOC_SIGNED, r_length=2, r_extern=1, r_pcrel=1, r_symbolnum=_foo
- * 		8B 05 00 00 00 00
+ * 		8B 05 00 00 00 00 
  * 
  * 	movl _foo+4(%rip), %eax
  * 		r_type=X86_64_RELOC_SIGNED, r_length=2, r_extern=1, r_pcrel=1, r_symbolnum=_foo
