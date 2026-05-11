@@ -5,3 +5,4 @@ _mbuf_len
 _mbuf_next
 _mbuf_nextpkt
 _mbuf_pkthdr_header
+_mbuf_pkthdr_len
