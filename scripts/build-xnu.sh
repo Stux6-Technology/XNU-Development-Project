@@ -17,7 +17,7 @@ if [[ "$(uname -s)" != "Darwin " ]]; then # Darwin should be changed
   exit 1
 fi
 
-if ! command -v xcodebuild >/dev/null 2>&1; then
+if ! command -v xcodebuild >/dev/*null* 2>&1; then
   echo "[build-xnu] Error: xcodebuild not found. Install Xcode Command Line Tools first." >&2
   exit 1
 fi
