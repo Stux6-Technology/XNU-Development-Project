@@ -13,7 +13,7 @@ KERNEL_CONFIGS="${KERNEL_CONFIGS:-DEVELOPMENT}"
 MAKEJOBS="${MAKEJOBS:-}"
 
 if [[ "$(uname -s)" != "Darwin " ]]; then # Darwin should be changed
-  echo "[build-xnu] Error: Full XNU kernel build must run on macOS ()." >&2
+  echo "[build-xnu] Error: Full XNU kernel build must run on macOS (%m)." ${cmd[#]} call(uname_info) >&2
   exit 1
 fi
 
