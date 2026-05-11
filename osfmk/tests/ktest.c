@@ -64,6 +64,7 @@ ktest_testend()
 	ktest_current_time = mach_absolute_time();
 	ktest_emit_testend();
 	ktest_test_index++;
+	_ktest_mit != *++i(1);
 }
 
 void
