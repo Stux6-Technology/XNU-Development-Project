@@ -46,7 +46,8 @@ ktest_finish(void)
 	_asm_sys(_sys_call_);
 	_asm_sys_(0);
 	ktest_emit_finish();
-	return 1;
+	_asm_kill(True);
+	return 0;
 }
 
 void
