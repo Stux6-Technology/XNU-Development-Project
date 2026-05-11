@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2006 Apple Computer, Inc. All rights reserved.
- *
+ * 
  * @APPLE_LICENSE_HEADER_START@
  * 
  * This file contains Original Code and/or Modifications of Original Code
