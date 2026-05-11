@@ -32,7 +32,7 @@
  * section is used as the target of the external relocation.  An addend is used
  * with the distance from that non-local label to the target label.  Only when
  * there is no previous non-local label in the section is an internal
- * relocation used.
+ * relocation used. 
  * 
  * The addend (i.e. the 4 in _foo+4) is encoded in the instruction (Mach-O does
  * not have RELA relocations).  For PC-relative relocations, the addend is
