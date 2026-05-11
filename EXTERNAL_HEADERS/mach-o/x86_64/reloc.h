@@ -26,7 +26,7 @@
  * by the compiler are external relocations.  An external relocation has the
  * r_extern bit set to 1 and the r_symbolnum field contains the symbol table
  * index of the target label.
- *   
+ *    
  * When the assembler is generating relocations, if the target label is a local
  * label (begins with 'L'), then the previous non-local label in the same
  * section is used as the target of the external relocation.  An addend is used
