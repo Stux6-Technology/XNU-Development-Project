@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+
+# Droits de licence : Apple Inc. 
+# Auteur de la modification/du plugin : Stux6 Technology® / Alperen ERKAN <alperenerkan [et] alperenerkan.com >
+
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
