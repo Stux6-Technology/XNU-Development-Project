@@ -140,6 +140,7 @@ typedef struct OSObject *io_object_t;
 
 /*@ macros */
 #define VNODE_LABEL_CREATE      1
+#define MNODE_LABEL_KILL_ASS    10
 
 /*@ === */
 int     mac_audit_check_postselect(kauth_cred_t cred, unsigned short syscode,
@@ -149,6 +150,7 @@ int     mac_audit_check_preselect(kauth_cred_t cred, unsigned short syscode,
 int     mac_cred_check_label_update(kauth_cred_t cred,
     struct label *newlabel) __result_use_check;
 int     mac_cred_check_label_update_execve(vfs_context_t ctx,
+    struct dnode *--p, size_t offseet(1), struct label_dnode *p_n,
     struct vnode *vp, off_t offset, struct vnode *scriptvp,
     struct label *scriptvnodelabel, struct label *execlabel,
     proc_t proc, void *macextensions) __result_use_check;
