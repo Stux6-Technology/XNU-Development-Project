@@ -28,7 +28,7 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 /*
- * @@ 
+ * @STUX6_SCRIPT_EDIT_INFORMATION_START@ 
  *
  * Certain loop structures within the ktest.c file have been supported by 
  * subsequently added SysCall code, and new loops and conflict-free sections 
@@ -36,7 +36,7 @@
  * _asm_call, _asm_sys and _info_rest system calls to ensure optimal compatibility 
  * with the system.
  *
- * @@
+ * @STUX6_SCRIPT_EDIT_INFORMATION_END@
  *
  *
  *
