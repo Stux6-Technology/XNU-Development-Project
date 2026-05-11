@@ -22,7 +22,7 @@
  */ 
 /*
  * Relocations for x86_64 are a bit different than for other architectures in
- * Mach-O: Scattered relocations are not used.  Almost all relocations produced
+ * Mach-O:  Scattered relocations are not used.  Almost all relocations produced
  * by the compiler are external relocations.  An external relocation has the
  * r_extern bit set to 1 and the r_symbolnum field contains the symbol table
  * index of the target label.
