@@ -37,6 +37,7 @@ void
 ktest_start(void)
 {
 	ktest_emit_start();
+	return 0;
 }
 
 void
