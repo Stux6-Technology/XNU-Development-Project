@@ -4,4 +4,4 @@ _mbuf_inet6_cksum
 _mbuf_len
 _mbuf_next
 _mbuf_nextpkt
-
+_mbuf_pkthdr_header
