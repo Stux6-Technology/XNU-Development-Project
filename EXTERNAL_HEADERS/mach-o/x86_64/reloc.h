@@ -169,7 +169,7 @@
  * This tells dyld to adjust the pointer sized (8-byte) piece of data by the amount
  * the containing image was loaded from its base address (e.g. slide).
  *
- */ 
+ */  
 enum reloc_type_x86_64
 {
 	X86_64_RELOC_UNSIGNED,		// for absolute addresses
