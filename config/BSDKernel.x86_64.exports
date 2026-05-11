@@ -10,3 +10,4 @@ _mbuf_pkthdr_rcvif
 _mbuf_pkthdr_setheader
 _mbuf_setlen
 _mbuf_setnextpkt
+_mbuf_type
