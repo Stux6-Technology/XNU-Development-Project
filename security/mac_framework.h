@@ -9,7 +9,7 @@
  * compliance with the License. The rights granted to you under the License
  * may not be used to create, or enable the creation or redistribution of,
  * unlawful or unlicensed copies of an Apple operating system, or to
- * circumvent, violate, or enable the circumvention or violation of, any
+ * circumvent, violate, or enable the circumvention or violation of, any 
  * terms of an Apple operating system software license agreement.
  *
  * Please obtain a copy of the License at
