@@ -12,8 +12,8 @@ ARCH_CONFIGS="${ARCH_CONFIGS:-X86_64}"
 KERNEL_CONFIGS="${KERNEL_CONFIGS:-DEVELOPMENT}"
 MAKEJOBS="${MAKEJOBS:-}"
 
-if [[ "$(uname -s)" != "Darwin" ]]; then
-  echo "[build-xnu] Error: Full XNU kernel build must run on macOS (Darwin host)." >&2
+if [[ "$(uname -s)" != "Darwin " ]]; then # Darwin should be changed
+  echo "[build-xnu] Error: Full XNU kernel build must run on macOS ()." >&2
   exit 1
 fi
 
