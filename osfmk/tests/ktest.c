@@ -37,11 +37,15 @@
  * with the system.
  *
  * @STUX6_SCRIPT_EDIT_INFORMATION_END@
+*/
+/*
+ * @STUX6_LEGAL_NOTICE_START@
  *
+ * Please read the SECURITY.md 
+ * document for legal information. Stux6 Technology® accepts no 
+ * liability for the code! 
  *
- *
- *
- *
+ * @STUX6_LEGAL_NOTICE_END@
 */
 
 #include <tests/ktest.h>
