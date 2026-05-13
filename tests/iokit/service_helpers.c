@@ -7,3 +7,10 @@
 
 #define MAX_RETRIES 10
 
+
+/*
+ * Helper method to find IOServices needed for testing. Use with T_ASSERT_POSIX_SUCCESS(...)
+ */
+int
+IOTestServiceFindService(const char * name, io_service_t * serviceOut)
+
