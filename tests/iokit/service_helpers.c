@@ -36,7 +36,7 @@ IOTestServiceFindService(const char * name, io_service_t * serviceOut)
 	if (service == IO_OBJECT_NULL) {
 		err = ENOENT;
 		goto finish;
-	}
+	} 
 
 	err = 0;
 
