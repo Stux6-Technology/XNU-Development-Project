@@ -13,4 +13,16 @@
  */
 int
 IOTestServiceFindService(const char * name, io_service_t * serviceOut)
+{
+	int err = 0;
+	int retries = 0;
+	io_service_t service = IO_OBJECT_NULL;
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wcast-qual"
+	err = sysctlbyname("kern.iokit_test_service_setup", NULL, 0, (void *)name, strlen(name));
+#pragma clang diagnostic pop
+	if (err) {
+		goto finish;
+	}
 
