@@ -39,4 +39,13 @@ IOTestServiceFindService(const char * name, io_service_t * serviceOut)
 	} 
 
 	err = 0;
+finish:
+	if (serviceOut && service != IO_OBJECT_NULL) {
+		*serviceOut = service;
+	} else if (service != IO_OBJECT_NULL) {
+		IOObjectRelease(service);
+	}
+
+	return err;
+}
 
