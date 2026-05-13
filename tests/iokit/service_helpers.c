@@ -31,3 +31,12 @@ IOTestServiceFindService(const char * name, io_service_t * serviceOut)
 			sleep(1);
 			retries += 1;
 		}
+	} while (service == IO_OBJECT_NULL && retries <= MAX_RETRIES);
+
+	if (service == IO_OBJECT_NULL) {
+		err = ENOENT;
+		goto finish;
+	} 
+
+	err = 0;
+
