@@ -15,7 +15,7 @@ done
 echo -e "${NC}"
 
 echo -e "\n${YELLOW}Critical${NC}"
-echo -e "This script will initiate the process of downloading and configuring Apple OSS resources."
+echo -e "This script will initiate the process of downloading and configuring Apple OSS resources." 
 echo -e "--------------------------------------------------------------------------"
 echo -e "${GREEN}1)${NC} Continue "
 echo -e "${RED}2)${NC} End Process"
