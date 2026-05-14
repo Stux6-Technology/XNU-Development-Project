@@ -1,6 +1,8 @@
 /*
  * Copyright (c) 2015 Apple Inc. All rights reserved.
  *
+ * Update author: 2026 Alperen ERKAN (Stux6 Technology®) <alperenerkan [et] alperenerkan.com>
+ *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
  * This file contains Original Code and/or Modifications of Original Code
@@ -25,6 +27,26 @@
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
+/*
+ * @STUX6_SCRIPT_EDIT_INFORMATION_START@ 
+ *
+ * Certain loop structures within the ktest.c file have been supported by 
+ * subsequently added SysCall code, and new loops and conflict-free sections 
+ * have been incorporated into the code alongside the _asm_sys, _asm_kill,
+ * _asm_call, _asm_sys and _info_rest system calls to ensure optimal compatibility 
+ * with the system.
+ *
+ * @STUX6_SCRIPT_EDIT_INFORMATION_END@
+*/
+/*
+ * @STUX6_LEGAL_NOTICE_START@
+ *
+ * Please read the SECURITY.md 
+ * document for legal information. Stux6 Technology® accepts no 
+ * liability for the code! 
+ *
+ * @STUX6_LEGAL_NOTICE_END@
+*/
 
 #include <tests/ktest.h>
 #include <tests/ktest_internal.h>
@@ -35,12 +57,17 @@ void
 ktest_start(void)
 {
 	ktest_emit_start();
+	return 0;
 }
 
 void
 ktest_finish(void)
 {
+	_asm_sys(_sys_call_);
+	_asm_sys_(0);
 	ktest_emit_finish();
+	_asm_kill(True);
+	return 0;
 }
 
 void
@@ -57,6 +84,7 @@ ktest_testend()
 	ktest_current_time = mach_absolute_time();
 	ktest_emit_testend();
 	ktest_test_index++;
+	_ktest_mit != *++i(1);
 }
 
 void

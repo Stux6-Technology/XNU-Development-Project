@@ -1,0 +1,36 @@
+name: xnu-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  devtools-check:
+    name: Devtools Check (Linux Docker)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build devtools image
+        run: docker build -f docker/Dockerfile.devtools -t xnu-devtools:ci .
+
+      - name: Run toolchain smoke checks
+        run: |
+          docker run --rm -v "$PWD:/workspace" -w /workspace xnu-devtools:ci bash -lc '
+            set -euo pipefail
+            clang --version | head -n 1
+            make --version | head -n 1
+            python3 --version
+            rg --version | head -n 1
+          '
+
+  xnu-build-macos:
+    name: Full XNU Build (macOS Host)
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build kernel on host
+        run: ./scripts/build-xnu.sh

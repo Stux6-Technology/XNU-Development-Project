@@ -1,39 +1,39 @@
 /*
  * Copyright (c) 2006 Apple Computer, Inc. All rights reserved.
- *
- * @APPLE_LICENSE_HEADER_START@
  * 
+ * @APPLE_LICENSE_HEADER_START@
+ *  
  * This file contains Original Code and/or Modifications of Original Code
  * as defined in and that are subject to the Apple Public Source License
  * Version 2.0 (the 'License'). You may not use this file except in
  * compliance with the License. Please obtain a copy of the License at
  * http://www.opensource.apple.com/apsl/ and read it before using this
  * file.
- * 
+ *  
  * The Original Code and all software distributed under the License are
  * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
- * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
+ * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES, 
  * INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.
  * Please see the License for the specific language governing rights and
  * limitations under the License.
- * 
- * @APPLE_LICENSE_HEADER_END@
- */
+ *   
+ * @APPLE_LICENSE_HEADER_END@ 
+ */ 
 /*
  * Relocations for x86_64 are a bit different than for other architectures in
- * Mach-O: Scattered relocations are not used.  Almost all relocations produced
+ * Mach-O:  Scattered relocations are not used.  Almost all relocations produced
  * by the compiler are external relocations.  An external relocation has the
  * r_extern bit set to 1 and the r_symbolnum field contains the symbol table
  * index of the target label.
- * 
+ *    
  * When the assembler is generating relocations, if the target label is a local
  * label (begins with 'L'), then the previous non-local label in the same
  * section is used as the target of the external relocation.  An addend is used
  * with the distance from that non-local label to the target label.  Only when
  * there is no previous non-local label in the section is an internal
- * relocation used.
- * 
+ * relocation used.  
+ *  
  * The addend (i.e. the 4 in _foo+4) is encoded in the instruction (Mach-O does
  * not have RELA relocations).  For PC-relative relocations, the addend is
  * stored directly in the instruction.  This is different from other Mach-O
@@ -69,7 +69,7 @@
  * 	
  * 	movl _foo(%rip), %eax
  * 		r_type=X86_64_RELOC_SIGNED, r_length=2, r_extern=1, r_pcrel=1, r_symbolnum=_foo
- * 		8B 05 00 00 00 00
+ * 		8B 05 00 00 00 00 
  * 
  * 	movl _foo+4(%rip), %eax
  * 		r_type=X86_64_RELOC_SIGNED, r_length=2, r_extern=1, r_pcrel=1, r_symbolnum=_foo
@@ -169,7 +169,7 @@
  * This tells dyld to adjust the pointer sized (8-byte) piece of data by the amount
  * the containing image was loaded from its base address (e.g. slide).
  *
- */ 
+ */  
 enum reloc_type_x86_64
 {
 	X86_64_RELOC_UNSIGNED,		// for absolute addresses

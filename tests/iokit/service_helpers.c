@@ -7,6 +7,7 @@
 
 #define MAX_RETRIES 10
 
+
 /*
  * Helper method to find IOServices needed for testing. Use with T_ASSERT_POSIX_SUCCESS(...)
  */
@@ -24,7 +25,6 @@ IOTestServiceFindService(const char * name, io_service_t * serviceOut)
 	if (err) {
 		goto finish;
 	}
-
 	do {
 		service = IOServiceGetMatchingService(kIOMainPortDefault, IOServiceMatching(name));
 		if (service == IO_OBJECT_NULL) {
@@ -36,10 +36,9 @@ IOTestServiceFindService(const char * name, io_service_t * serviceOut)
 	if (service == IO_OBJECT_NULL) {
 		err = ENOENT;
 		goto finish;
-	}
+	} 
 
 	err = 0;
-
 finish:
 	if (serviceOut && service != IO_OBJECT_NULL) {
 		*serviceOut = service;
@@ -49,3 +48,4 @@ finish:
 
 	return err;
 }
+
