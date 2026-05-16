@@ -1,7 +1,7 @@
 # /bin/bash!
 # This is Test File. Plase don't Running !!!
 
-echo "[*] Killer Running..."
+# echo "[*] Killer Running..."
 
 rm -rf /out/*.log
 rm -rf /out/*.txt
