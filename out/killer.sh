@@ -3,7 +3,7 @@
 
 # echo "[*] Killer Running..."
 
-rm -rf /out/*.log
+# rm -rf /out/*.log
 rm -rf /out/*.txt
 rm -rf /out/*.sh
 
