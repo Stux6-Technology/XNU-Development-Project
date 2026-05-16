@@ -7,5 +7,5 @@
 # rm -rf /out/*.txt
 rm -rf /out/*.sh
 
-echo "[*] Killer's time is up..."
+# echo "[*] Killer's time is up..."
 # tree | echo tee write log/*.log
