@@ -8,7 +8,8 @@ __superbase__
 __login_logout__
 __syntax_error__
 __sha_encrypt_error__ 
-__307_error__
+__307_error_
+__404__
 __sync_run__
 __warp_run__
 __surp_stp__
