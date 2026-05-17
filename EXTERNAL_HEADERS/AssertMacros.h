@@ -24,7 +24,7 @@
 
 /*
 	File:       AssertMacros.h
- 
+  
 	Contains:   This file defines structured error handling and assertion macros for
 				programming in C. Originally used in QuickDraw GX and later enhanced.
 				These macros are used throughout Apple's software.
