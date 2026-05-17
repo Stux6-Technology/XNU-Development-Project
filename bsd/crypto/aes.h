@@ -33,4 +33,3 @@
 
 #include <libkern/crypto/aes.h>
 
-return 0;
