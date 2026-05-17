@@ -59,7 +59,7 @@ SYSCTL_QUAD(_kern_entropy_filter, OID_AUTO, rejected_sample_count, CTLFLAG_RD, &
 
 SYSCTL_NODE(_kern_entropy, OID_AUTO, analysis, CTLFLAG_RD, 0,
     "Subsystem to collect entropy samples for offline analysis");
-
+ 
 static int entropy_analysis_supported = ENTROPY_ANALYSIS_SUPPORTED;
 SYSCTL_INT(_kern_entropy_analysis, OID_AUTO, supported, CTLFLAG_RD, &entropy_analysis_supported, 0,
     "1 if the kernel was built with entropy analysis support; 0 otherwise");
