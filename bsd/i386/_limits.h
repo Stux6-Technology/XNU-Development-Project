@@ -24,7 +24,7 @@
 
 #if defined (__i386__) || defined (__x86_64__)
 
-#define __DARWIN_CLK_TCK                100     /* ticks per second */
+#define __DARWIN_CLK_TCK                100     /* ticks per second */ 
 
 #endif /* defined (__i386__) || defined (__x86_64__) */
 
