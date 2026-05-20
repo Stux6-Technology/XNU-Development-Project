@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ISO_PATH="${ISO_PATH:-/vm/iso/kernel.iso}"
+ISO_PATH="${ISO_PATH:-/vm/os/kernel.iso}"
 RAM_MB="${RAM_MB:-6116}"
 CPUS="${CPUS:-6}"
 
