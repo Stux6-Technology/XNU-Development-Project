@@ -1,6 +1,9 @@
 /*
  * Copyright (c) 1999-2016 Apple Inc.  All rights reserved.
  *
+ * Update author: Alperen ERKAN <erkanalperen54 [at] gmail.com>
+ * Update team: Stux6 Technology (TM) 
+ *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
  * This file contains Original Code and/or Modifications of Original Code
@@ -24,6 +27,8 @@
  * limitations under the License.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
+ *
+ * update relase: A CPU Core Selector script has been added to the script for testing purposes.
  */
 
 #define IOKIT_ENABLE_SHARED_PTR
