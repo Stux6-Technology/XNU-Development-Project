@@ -2,8 +2,8 @@
 set -euo pipefail
 
 ISO_PATH="${ISO_PATH:-/vm/iso/kernel.iso}"
-RAM_MB="${RAM_MB:-4096}"
-CPUS="${CPUS:-4}"
+RAM_MB="${RAM_MB:-6116}"
+CPUS="${CPUS:-6}"
 
 if [[ ! -f "$ISO_PATH" ]]; then
   echo "[qemu] ISO not found: $ISO_PATH" >&2
