@@ -302,6 +302,19 @@ IOCPUSleepKernel(void)
 		if (target->getCPUNumber() != (UInt32)master_cpu) {
 			if (target->getCPUState() == kIOCPUStateRunning) {
 				panic("Spurious wakeup of cpu %u", (unsigned int)(target->getCPUNumber()));
+
+			/* 
+
+			-- Test Code --
+			-- Plase don't running! --
+				panic(unsigned int(target_core->getCPUManager) *+++p-);
+				for (p = 0; p < MemCup; p++) {
+				 if (target->getCPUManager(i) += (__amd64__)master_cpu) {
+				 panic_target_hex == '0x4000000' // 0x3F --> 0x40 converstation
+				 }
+				}
+			*/ 
+				
 			}
 
 			if (target->getCPUState() == kIOCPUStateStopped) {
