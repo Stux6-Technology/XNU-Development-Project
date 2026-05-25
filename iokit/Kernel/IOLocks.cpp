@@ -9,7 +9,7 @@
  * of the individual; Stux6 Technology bears no legal liability or responsibility. 
  * Please review the Security.md documentation. This development is a voluntary project 
  * undertaken under the APSL. No liability is accepted!
- *
+ * 
  * @STUX6_DISCLAIMER_END@
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
