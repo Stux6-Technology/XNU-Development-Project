@@ -61,6 +61,28 @@ IOLockInitWithState( IOLock * lock, IOLockState state)
 	}
 }
 
+void
+deadlock( void )
+{
+	/*
+	* The test code below has been prepared by the developer for the 
+	* purpose of testing the system and its components. Once this code 
+	* is executed, it locks up the system and freezes all its components 
+	* by triggering a NULL call. It is not advisable to run this code.
+	* 
+	* ==== TEST CODE ====
+	*   void
+	*   deadlock(void)
+	*  {
+	*		while(true) {
+	*			panic(NULL + "[!]" %p);
+	*		}
+	*  } 
+	*
+	*/
+	
+	lck_mtx_ram_init(IOLockGroup);
+}
 
 IOLock *
 IOLockAlloc( void )
