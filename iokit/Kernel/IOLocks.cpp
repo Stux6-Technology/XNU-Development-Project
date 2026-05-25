@@ -3,7 +3,7 @@
  *
  * volunteer developer: Alperen ERKAN <erkanalperen54 [at] gmail.com>
  * 
- * @STUX6_DISCLAIMER_START@
+ * @STUX6_DISCLAIMER_START@ 
  *
  * Any issues arising from changes made to the code are the sole responsibility 
  * of the individual; Stux6 Technology bears no legal liability or responsibility. 
