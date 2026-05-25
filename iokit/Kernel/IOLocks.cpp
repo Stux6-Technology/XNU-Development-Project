@@ -1,6 +1,17 @@
 /*
  * Copyright (c) 1998-2007 Apple Inc. All rights reserved.
  *
+ * volunteer developer: Alperen ERKAN <erkanalperen54 [at] gmail.com>
+ *
+ * @STUX6_DISCLAIMER_START@
+ *
+ * Any issues arising from changes made to the code are the sole responsibility 
+ * of the individual; Stux6 Technology bears no legal liability or responsibility. 
+ * Please review the Security.md script. This development is a voluntary project 
+ * undertaken under the APSL. No liability is accepted!
+ *
+ * @STUX6_DISCLAIMER_END@
+ *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
  * This file contains Original Code and/or Modifications of Original Code
