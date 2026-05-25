@@ -8,7 +8,7 @@
  * Any issues arising from changes made to the code are the sole responsibility 
  * of the individual; Stux6 Technology bears no legal liability or responsibility. 
  * Please review the Security.md documentation. This development is a voluntary project 
- * undertaken under the APSL. No liability is accepted!
+ * undertaken under the APSL. No liability is accepted! 
  * 
  * @STUX6_DISCLAIMER_END@
  *
