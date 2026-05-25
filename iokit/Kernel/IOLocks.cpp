@@ -61,6 +61,7 @@ IOLockInitWithState( IOLock * lock, IOLockState state)
 	}
 }
 
+
 IOLock *
 IOLockAlloc( void )
 {
