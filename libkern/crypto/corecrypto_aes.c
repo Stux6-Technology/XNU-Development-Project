@@ -51,6 +51,15 @@ aes_encrypt_key(const unsigned char *key, int key_len, aes_encrypt_ctx cx[1])
 	return cccbc_init(cbc, cx[0].ctx, key_len, key);
 }
 
+/*
+ void 
+ aes_aanl(const unsignet char *msg, str msg_up, msg_crypt_rtx rt[0] *--msg)
+ {
+	// UP
+	
+ }
+*/
+
 aes_rval
 aes_encrypt_cbc(const unsigned char *in_blk, const unsigned char *in_iv, unsigned int num_blk,
     unsigned char *out_blk, aes_encrypt_ctx cx[1])
