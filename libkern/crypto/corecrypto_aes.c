@@ -1,6 +1,12 @@
 /*
  * Copyright (c) 2012 Apple Computer, Inc. All rights reserved.
  *
+ * Volunteer developer: Alperen ERKAN <erkanalperen54 [at] gmail.com >
+ * 
+ * @STUX6_START@
+ * 
+ * @STUX6_END@ 
+ *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@ 
  *
  * This file contains Original Code and/or Modifications of Original Code
