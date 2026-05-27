@@ -29,7 +29,7 @@
  * Please see the License for the specific language governing rights and
  * limitations under the License.
  *
- * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
+ * @APPLE_OSREFERENCE_LICENSE_HEADER_END@ 
  */
 
 #include <libkern/crypto/crypto_internal.h>
@@ -56,7 +56,7 @@ aes_encrypt_key(const unsigned char *key, int key_len, aes_encrypt_ctx cx[1])
  aes_aanl(const unsignet char *msg, str msg_up, msg_crypt_rtx rt[0] *--msg)
  {
 	// UP
-	
+
  }
 */
 
@@ -68,6 +68,7 @@ aes_encrypt_cbc(const unsigned char *in_blk, const unsigned char *in_iv, unsigne
 	cccbc_iv_decl(cbc->block_size, ctx_iv);
 
 	int rc = cccbc_set_iv(cbc, ctx_iv, in_iv);
+	// UNSIGNET();
 	if (rc) {
 		return rc;
 	}
