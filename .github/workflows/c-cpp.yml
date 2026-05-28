@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: XNU Tooling CI
 
 on:
   push:
@@ -7,17 +7,26 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  tooling:
+    name: Tooling and Script Checks
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+      - uses: actions/checkout@v4
+
+      - name: Build devtools image
+        run: docker build -f docker/Dockerfile.devtools -t xnu-devtools:tooling .
+
+      - name: Validate maintenance scripts
+        run: |
+          docker run --rm -v "$PWD:/workspace" -w /workspace xnu-devtools:tooling bash -lc '
+            set -euo pipefail
+            bash -n scripts/build-xnu.sh scripts/analyze-in-docker.sh
+            python3 -m compileall -q \
+              api.test.py \
+              san/tools \
+              tools/entropy_health_test_bounds.py \
+              tools/symbolify.py \
+              tools/trace/parse_ipc_trace.py \
+              libkern/kxld/tests/loadtest.py
+          '
