@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="xnu.png" alt="Profile" width="1080"/>
+  <img src="projects.png" alt="Profile" width="1080"/>
 </p>
 
 <br/>
