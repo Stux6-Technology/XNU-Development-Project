@@ -13,6 +13,7 @@ for i in {1..3}; do
     echo -ne "${RED}."
 done
 echo -e "${NC}"
+sleep 1
 
 echo -e "\n${YELLOW}Critical${NC}"
 echo -e "This script will initiate the process of downloading and configuring Apple OSS resources." 
@@ -25,9 +26,15 @@ read -p "Your choice [1-2]: " choice
 
 case $choice in
     1)
-        echo -e "\n${GREEN}[+]${NC} The transaction has been confirmed. Reading the Apple manifest..."
-        # general codes
-        ;;
+        echo -e "\n${YELLOW}[+]${NC} The transaction has been confirmed. Reading the Apple manifest..."
+             echo -ne "${YELLOW}[!] The process was terminated due to a critical error in the code. \n"
+             echo -ne "${RED}[!] Closing"
+                for i in {1..3}; do
+                sleep 1
+            done
+            echo -e "${NC}"
+	;;
+
     2)
         echo -e "\n${RED}[!] The transaction was forcibly closed...${NC}"
         echo -e "${YELLOW}[*] The Stux6-Technology Security Protocol has been implemented.${NC}"
