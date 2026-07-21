@@ -1,6 +1,10 @@
 #
 # Copyright (C) 1999-2020 Apple Inc. All rights reserved.
 #
+ifneq ("$(wildcard $(CURDIR)/Makefile.local)","")
+include $(CURDIR)/Makefile.local
+endif
+
 ifndef VERSDIR
 export VERSDIR := $(shell /bin/pwd)
 endif

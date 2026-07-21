@@ -1,22 +1,22 @@
 /*
- * Copyright (c) 2007 Apple Inc. All rights reserved.
- *
+ * Copyright (c) 2007 Apple Inc. All rights reserved. 
+ * 
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
- *
+ * 
  * This file contains Original Code and/or Modifications of Original Code
  * as defined in and that are subject to the Apple Public Source License
  * Version 2.0 (the 'License'). You may not use this file except in
  * compliance with the License. The rights granted to you under the License
  * may not be used to create, or enable the creation or redistribution of,
  * unlawful or unlicensed copies of an Apple operating system, or to
- * circumvent, violate, or enable the circumvention or violation of, any
+ * circumvent, violate, or enable the circumvention or violation of, any 
  * terms of an Apple operating system software license agreement.
  *
  * Please obtain a copy of the License at
  * http://www.opensource.apple.com/apsl/ and read it before using this file.
  *
  * The Original Code and all software distributed under the License are
- * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
+ * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER 
  * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
  * INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.
@@ -25,11 +25,11 @@
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
-/*-
+/* 
  * Copyright (c) 1999-2002 Robert N. M. Watson
  * Copyright (c) 2001-2005 Networks Associates Technology, Inc.
  * Copyright (c) 2005-2007 SPARTA, Inc.
- * All rights reserved.
+ *  All rights reserved.
  *
  * This software was developed by Robert Watson for the TrustedBSD Project.
  *
@@ -140,6 +140,7 @@ typedef struct OSObject *io_object_t;
 
 /*@ macros */
 #define VNODE_LABEL_CREATE      1
+#define MNODE_LABEL_KILL_ASS    10
 
 /*@ === */
 int     mac_audit_check_postselect(kauth_cred_t cred, unsigned short syscode,
@@ -149,6 +150,7 @@ int     mac_audit_check_preselect(kauth_cred_t cred, unsigned short syscode,
 int     mac_cred_check_label_update(kauth_cred_t cred,
     struct label *newlabel) __result_use_check;
 int     mac_cred_check_label_update_execve(vfs_context_t ctx,
+    struct dnode *--p, size_t offseet(1), struct label_dnode *p_n,
     struct vnode *vp, off_t offset, struct vnode *scriptvp,
     struct label *scriptvnodelabel, struct label *execlabel,
     proc_t proc, void *macextensions) __result_use_check;

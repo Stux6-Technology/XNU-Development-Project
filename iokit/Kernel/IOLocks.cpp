@@ -1,5 +1,16 @@
-/*
+/* 
  * Copyright (c) 1998-2007 Apple Inc. All rights reserved.
+ *
+ * volunteer developer: Alperen ERKAN <erkanalperen54 [at] gmail.com>
+ * 
+ * @STUX6_DISCLAIMER_START@ 
+ *
+ * Any issues arising from changes made to the code are the sole responsibility 
+ * of the individual; Stux6 Technology bears no legal liability or responsibility. 
+ * Please review the Security.md documentation. This development is a voluntary project 
+ * undertaken under the APSL. No liability is accepted! 
+ * 
+ * @STUX6_DISCLAIMER_END@
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
@@ -11,10 +22,10 @@
  * unlawful or unlicensed copies of an Apple operating system, or to
  * circumvent, violate, or enable the circumvention or violation of, any
  * terms of an Apple operating system software license agreement.
- *
+ * 
  * Please obtain a copy of the License at
  * http://www.opensource.apple.com/apsl/ and read it before using this file.
- *
+ * 
  * The Original Code and all software distributed under the License are
  * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
  * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
@@ -24,7 +35,7 @@
  * limitations under the License.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
- */
+ */ 
 
 #include <IOKit/system.h>
 
@@ -48,6 +59,29 @@ IOLockInitWithState( IOLock * lock, IOLockState state)
 	if (state == kIOLockStateLocked) {
 		lck_mtx_lock( lock);
 	}
+}
+
+void
+deadlock( void )
+{
+	/*
+	* The test code below has been prepared by the developer for the 
+	* purpose of testing the system and its components. Once this code 
+	* is executed, it locks up the system and freezes all its components 
+	* by triggering a NULL call. It is not advisable to run this code.
+	* 
+	* ==== TEST CODE ====
+	*   void
+	*   deadlock(void)
+	*  {
+	*		while(true) {
+	*			panic(NULL + "[!]" %p);
+	*		}
+	*  } 
+	*
+	*/
+	
+	lck_mtx_ram_init(IOLockGroup);
 }
 
 IOLock *

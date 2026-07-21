@@ -1,6 +1,9 @@
 /*
  * Copyright (c) 2020 Apple Inc. All rights reserved.
- *
+ * ---
+ * Portions Copyright (c) 2026 Alperen ERKAN. All rights reserved.
+ * This file has been modified for the XNU-Development-Project.
+ * ---
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
  * This file contains Original Code and/or Modifications of Original Code

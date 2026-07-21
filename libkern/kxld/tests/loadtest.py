@@ -26,13 +26,13 @@
 # @APPLE_OSREFERENCE_LICENSE_HEADER_END@
 ##
 
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 from subprocess import call, Popen, PIPE
 
 kexts = []
-pipe = Popen("/usr/sbin/kextfind \( -l -and -x -and -arch i386 \)", shell=True, stdout=PIPE).stdout
+pipe = Popen(r"/usr/sbin/kextfind \( -l -and -x -and -arch i386 \)", shell=True, stdout=PIPE, text=True).stdout
 
 line = pipe.readline()
 while line:
@@ -43,18 +43,17 @@ NULL = open("/dev/null")
 
 for kext in kexts:
     try:
-        print "Processing", kext
+        print("Processing", kext)
 #cmd = "/sbin/kextload -ns /tmp/syms \"%s\"" % kext
         cmd = "/sbin/kextload \"%s\"" % kext
-        kextload = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE)
+        kextload = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, text=True)
         for i in range(20):
-            kextload.stdin.write("0x1000\n");
+            kextload.stdin.write("0x1000\n")
         retcode = kextload.wait()
         if retcode < 0:
-            print >>sys.stderr, "*** kextload of %s was terminated by signal %d" % (kext, -retcode)
+            print("*** kextload of %s was terminated by signal %d" % (kext, -retcode), file=sys.stderr)
         elif retcode > 0:
-            print >>sys.stderr, "*** kextload of %s failed with return code %d" % (kext, retcode)
-    except OSError, e:
-        print >>sys.stderr, "Execution failed:", e
+            print("*** kextload of %s failed with return code %d" % (kext, retcode), file=sys.stderr)
+    except OSError as e:
+        print("Execution failed:", e, file=sys.stderr)
         sys.exit(1)
-

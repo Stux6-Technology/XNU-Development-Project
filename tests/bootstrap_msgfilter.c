@@ -6,7 +6,7 @@
 #include <sys/sysctl.h>
 #include <sys/wait.h>
 #include <unistd.h>
-
+ 
 #include <darwintest.h>
 #include <darwintest_utils.h>
 
@@ -19,7 +19,7 @@ T_GLOBAL_META(T_META_RUN_CONCURRENTLY(true),
 
 struct test_msg {
 	mach_msg_header_t header;
-	mach_msg_trailer_t trailer; // subtract this when sending
+	mach_msg_trailer_t trailer;  // subtract this when sending
 };
 
 T_DECL(bootstrap_mig_always_filtered,
@@ -42,19 +42,20 @@ T_DECL(bootstrap_mig_always_filtered,
 	    MPO_INSERT_SEND_RIGHT |
 	    MPO_CONTEXT_AS_GUARD |
 	    MPO_STRICT,
-		.service_port_info = &mspi,
+		.service_port_info  = &mspi,
 	};
 
-	int ctxobj = 0;
+  	int ctxobj = 0;
 
 	mach_port_t test_bootstrap_port;
 	kern_return_t kr = mach_port_construct(mach_task_self(), &port_opts,
 	    (uintptr_t)&ctxobj, &test_bootstrap_port);
 	T_ASSERT_MACH_SUCCESS(kr, "mach_port_construct");
 
-	// sending a valid 'XPC' msgid should succeed
+	// sending a valid 'XPC ' msgid should succeed
 
 	mach_msg_id_t permitted_xpc_msgid = 0x01000042;
+	/* 0x01000042 --> 0x100FA */
 
 	struct test_msg msg = {
 		.header = {

@@ -1,0 +1,1055 @@
+│   │   ├── thread_get_assignment.html
+│   │   ├── thread_get_exception_ports.html
+│   │   ├── thread_get_special_port.html
+│   │   ├── thread_get_state.html
+│   │   ├── thread_info.html
+│   │   ├── thread_policy.html
+│   │   ├── thread_resume.html
+│   │   ├── thread_sample.html
+│   │   ├── thread_set_exception_ports.html
+│   │   ├── thread_set_policy.html
+│   │   ├── thread_set_special_port.html
+│   │   ├── thread_set_state.html
+│   │   ├── thread_suspend.html
+│   │   ├── thread_switch.html
+│   │   ├── thread_terminate.html
+│   │   ├── thread_wire.html
+│   │   ├── tvalspec.html
+│   │   ├── vm_allocate.html
+│   │   ├── vm_behavior_set.html
+│   │   ├── vm_copy.html
+│   │   ├── vm_deallocate.html
+│   │   ├── vm_inherit.html
+│   │   ├── vm_machine_attribute.html
+│   │   ├── vm_map.html
+│   │   ├── vm_msync.html
+│   │   ├── vm_protect.html
+│   │   ├── vm_read.html
+│   │   ├── vm_region.html
+│   │   ├── vm_region_basic_info.html
+│   │   ├── vm_remap.html
+│   │   ├── vm_statistics.html
+│   │   ├── vm_wire.html
+│   │   └── vm_write.html
+│   ├── prng
+│   │   ├── Makefile
+│   │   ├── entropy.c
+│   │   ├── entropy.h
+│   │   ├── prng_random.c
+│   │   └── random.h
+│   ├── tests
+│   │   ├── Makefile
+│   │   ├── README.md
+│   │   ├── bitmap_test.c
+│   │   ├── kernel_tests.c
+│   │   ├── ktest.c
+│   │   ├── ktest.h
+│   │   ├── ktest_accessor.c
+│   │   ├── ktest_emit.c
+│   │   ├── ktest_global.c
+│   │   ├── ktest_internal.h
+│   │   ├── pmap_tests.c
+│   │   ├── ptrauth_data_tests.c
+│   │   ├── test_thread_call.c
+│   │   ├── vfp_state_test.c
+│   │   └── xnupost.h
+│   ├── vm
+│   │   ├── Makefile
+│   │   ├── WKdm_new.h
+│   │   ├── analytics.c
+│   │   ├── bsd_vm.c
+│   │   ├── cpm.h
+│   │   ├── device_vm.c
+│   │   ├── lz4.c
+│   │   ├── lz4.h
+│   │   ├── lz4_assembly_select.h
+│   │   ├── lz4_constants.h
+│   │   ├── memory_object.c
+│   │   ├── memory_object.h
+│   │   ├── memory_types.h
+│   │   ├── pmap.h
+│   │   ├── pmap_cs.h
+│   │   ├── vm32_user.c
+│   │   ├── vm_apple_protect.c
+│   │   ├── vm_compressor.c
+│   │   ├── vm_compressor.h
+│   │   ├── vm_compressor_algorithms.c
+│   │   ├── vm_compressor_algorithms.h
+│   │   ├── vm_compressor_backing_store.c
+│   │   ├── vm_compressor_backing_store.h
+│   │   ├── vm_compressor_pager.c
+│   │   ├── vm_compressor_pager.h
+│   │   ├── vm_debug.c
+│   │   ├── vm_debug.h
+│   │   ├── vm_external.h
+│   │   ├── vm_fault.c
+│   │   ├── vm_fault.h
+│   │   ├── vm_fourk_pager.c
+│   │   ├── vm_init.c
+│   │   ├── vm_init.h
+│   │   ├── vm_kern.c
+│   │   ├── vm_kern.h
+│   │   ├── vm_map.c
+│   │   ├── vm_map.h
+│   │   ├── vm_map_internal.h
+│   │   ├── vm_map_store.c
+│   │   ├── vm_map_store.h
+│   │   ├── vm_map_store_ll.c
+│   │   ├── vm_map_store_ll.h
+│   │   ├── vm_map_store_rb.c
+│   │   ├── vm_map_store_rb.h
+│   │   ├── vm_object.c
+│   │   ├── vm_object.h
+│   │   ├── vm_options.h
+│   │   ├── vm_page.h
+│   │   ├── vm_pageout.c
+│   │   ├── vm_pageout.h
+│   │   ├── vm_phantom_cache.c
+│   │   ├── vm_phantom_cache.h
+│   │   ├── vm_protos.h
+│   │   ├── vm_purgeable.c
+│   │   ├── vm_purgeable_internal.h
+│   │   ├── vm_resident.c
+│   │   ├── vm_shared_region.c
+│   │   ├── vm_shared_region.h
+│   │   ├── vm_shared_region_pager.c
+│   │   ├── vm_swapfile_pager.c
+│   │   ├── vm_tests.c
+│   │   └── vm_user.c
+│   ├── voucher
+│   │   ├── Makefile
+│   │   ├── ipc_pthread_priority.c
+│   │   ├── ipc_pthread_priority_internal.h
+│   │   └── ipc_pthread_priority_types.h
+│   └── x86_64
+│       ├── Makefile
+│       ├── WKdmCompress_new.s
+│       ├── WKdmData_new.s
+│       ├── WKdmDecompress_new.s
+│       ├── bcopy.s
+│       ├── boot_pt.c
+│       ├── bzero.s
+│       ├── copyio.c
+│       ├── counter.c
+│       ├── cswitch.s
+│       ├── dwarf_unwind.h
+│       ├── idt64.s
+│       ├── idt_table.h
+│       ├── kpc_x86.c
+│       ├── locore.s
+│       ├── loose_ends.c
+│       ├── lowglobals.h
+│       ├── lowmem_vectors.c
+│       ├── lz4_decode_x86_64.s
+│       ├── machine_kpc.h
+│       ├── machine_remote_time.c
+│       ├── machine_remote_time.h
+│       ├── machine_routines_asm.s
+│       ├── mcount.s
+│       ├── monotonic.h
+│       ├── monotonic_x86_64.c
+│       ├── pal_routines_asm.s
+│       ├── pmap.c
+│       ├── pmap_pcid.c
+│       └── start.s
+├── pexpert
+│   ├── Makefile
+│   ├── arm
+│   │   ├── pe_bootargs.c
+│   │   ├── pe_consistent_debug.c
+│   │   ├── pe_fiq.c
+│   │   ├── pe_identify_machine.c
+│   │   ├── pe_init.c
+│   │   ├── pe_kprintf.c
+│   │   └── pe_serial.c
+│   ├── conf
+│   │   ├── Makefile
+│   │   ├── Makefile.arm
+│   │   ├── Makefile.arm64
+│   │   ├── Makefile.template
+│   │   ├── Makefile.x86_64
+│   │   ├── copyright
+│   │   ├── files
+│   │   ├── files.arm
+│   │   ├── files.arm64
+│   │   └── files.x86_64
+│   ├── gen
+│   │   ├── bootargs.c
+│   │   ├── device_tree.c
+│   │   ├── kcformat.c
+│   │   └── pe_gen.c
+│   ├── i386
+│   │   ├── boot_images.h
+│   │   ├── pe_bootargs.c
+│   │   ├── pe_identify_machine.c
+│   │   ├── pe_init.c
+│   │   ├── pe_interrupt.c
+│   │   ├── pe_kprintf.c
+│   │   └── pe_serial.c
+│   └── pexpert
+│       ├── AppleBoot.h
+│       ├── Clut.h
+│       ├── GearImage.h
+│       ├── Makefile
+│       ├── arm
+│       │   ├── AIC.h
+│       │   ├── Makefile
+│       │   ├── PL192_VIC.h
+│       │   ├── T8002.h
+│       │   ├── apple_uart_regs.h
+│       │   ├── board_config.h
+│       │   ├── boot.h
+│       │   ├── consistent_debug.h
+│       │   ├── dockchannel.h
+│       │   └── protos.h
+│       ├── arm64
+│       │   ├── AIC.h
+│       │   ├── BCM2837.h
+│       │   ├── H13.h
+│       │   ├── Makefile
+│       │   ├── VMAPPLE.h
+│       │   ├── apple_arm64_common.h
+│       │   ├── apple_arm64_regs.h
+│       │   ├── board_config.h
+│       │   ├── boot.h
+│       │   └── platform.h
+│       ├── boot.h
+│       ├── device_tree.h
+│       ├── i386
+│       │   ├── Makefile
+│       │   ├── boot.h
+│       │   ├── efi.h
+│       │   └── protos.h
+│       ├── machine
+│       │   ├── Makefile
+│       │   ├── boot.h
+│       │   └── protos.h
+│       ├── pe_images.h
+│       ├── pexpert.h
+│       └── protos.h
+├── san
+│   ├── Makefile
+│   ├── conf
+│   │   ├── Makefile
+│   │   ├── Makefile.arm
+│   │   ├── Makefile.arm64
+│   │   ├── Makefile.template
+│   │   ├── Makefile.x86_64
+│   │   ├── files
+│   │   ├── files.arm
+│   │   ├── files.arm64
+│   │   └── files.x86_64
+│   ├── coverage
+│   │   ├── Makefile
+│   │   ├── kcov-blacklist
+│   │   ├── kcov-blacklist-arm64
+│   │   ├── kcov-blacklist-x86_64
+│   │   ├── kcov.c
+│   │   ├── kcov.h
+│   │   ├── kcov_data.h
+│   │   ├── kcov_ksancov.c
+│   │   ├── kcov_ksancov.h
+│   │   ├── kcov_ksancov_data.h
+│   │   ├── kcov_stksz.c
+│   │   ├── kcov_stksz.h
+│   │   └── kcov_stksz_data.h
+│   ├── memory
+│   │   ├── Makefile
+│   │   ├── kasan-arm64.c
+│   │   ├── kasan-blacklist
+│   │   ├── kasan-blacklist-arm64
+│   │   ├── kasan-blacklist-dynamic
+│   │   ├── kasan-blacklist-x86_64
+│   │   ├── kasan-classic-arm64.h
+│   │   ├── kasan-classic.c
+│   │   ├── kasan-classic.h
+│   │   ├── kasan-fakestack.c
+│   │   ├── kasan-helper.c
+│   │   ├── kasan-memintrinsics.c
+│   │   ├── kasan-report.c
+│   │   ├── kasan-tbi-arm64.h
+│   │   ├── kasan-tbi.c
+│   │   ├── kasan-tbi.h
+│   │   ├── kasan-test-arm64.s
+│   │   ├── kasan-test-x86_64.s
+│   │   ├── kasan-test.c
+│   │   ├── kasan-x86_64.c
+│   │   ├── kasan.c
+│   │   ├── kasan.h
+│   │   ├── kasan_dynamic_blacklist.c
+│   │   ├── kasan_internal.h
+│   │   ├── memintrinsics.h
+│   │   ├── ubsan-blacklist
+│   │   ├── ubsan.c
+│   │   ├── ubsan.h
+│   │   ├── ubsan_log.c
+│   │   ├── ubsan_minimal.c
+│   │   └── ubsan_minimal.h
+│   └── tools
+│       ├── generate_dynamic_blacklist.py
+│       ├── kasan_install
+│       ├── ksancov.c
+│       ├── ksancov.h
+│       ├── kstksz
+│       ├── kstksz.plist
+│       └── validate_blacklist.sh
+├── security
+│   ├── Makefile
+│   ├── _label.h
+│   ├── conf
+│   │   ├── Makefile
+│   │   ├── Makefile.arm
+│   │   ├── Makefile.arm64
+│   │   ├── Makefile.template
+│   │   ├── Makefile.x86_64
+│   │   ├── copyright.nai
+│   │   ├── files
+│   │   ├── files.arm
+│   │   ├── files.arm64
+│   │   └── files.x86_64
+│   ├── mac.h
+│   ├── mac_audit.c
+│   ├── mac_base.c
+│   ├── mac_data.c
+│   ├── mac_data.h
+│   ├── mac_file.c
+│   ├── mac_framework.h
+│   ├── mac_internal.h
+│   ├── mac_iokit.c
+│   ├── mac_kext.c
+│   ├── mac_label.c
+│   ├── mac_mach.c
+│   ├── mac_mach_internal.h
+│   ├── mac_necp.c
+│   ├── mac_pipe.c
+│   ├── mac_policy.h
+│   ├── mac_posix_sem.c
+│   ├── mac_posix_shm.c
+│   ├── mac_priv.c
+│   ├── mac_process.c
+│   ├── mac_pty.c
+│   ├── mac_skywalk.c
+│   ├── mac_socket.c
+│   ├── mac_system.c
+│   ├── mac_sysv_msg.c
+│   ├── mac_sysv_sem.c
+│   ├── mac_sysv_shm.c
+│   ├── mac_vfs.c
+│   └── mac_vfs_subr.c
+├── test.txt
+├── tests
+│   ├── IP6_EXTHDR_CHECK_61873584.c
+│   ├── Makefile
+│   ├── aqm_qdelay_utun.c
+│   ├── arm_cpu_capabilities.c
+│   ├── atm_diagnostic_flag.c
+│   ├── atm_diagnostic_flag.entitlements
+│   ├── atm_diagnostic_flag_entitled.c
+│   ├── avx.c
+│   ├── backtracing_tests.c
+│   ├── benchmark
+│   │   ├── helpers.c
+│   │   └── helpers.h
+│   ├── bootstrap_msgfilter.c
+│   ├── bounded_array.cpp
+│   ├── bounded_array_ref.cpp
+│   ├── bounded_array_ref_src
+│   │   ├── begin_end.cpp
+│   │   ├── compare.equal.nullptr.cpp
+│   │   ├── ctor.C_array.cpp
+│   │   ├── ctor.begin_end.cpp
+│   │   ├── ctor.bounded_array.cpp
+│   │   ├── ctor.bounded_ptr.cpp
+│   │   ├── ctor.default.cpp
+│   │   ├── ctor.raw_ptr.cpp
+│   │   ├── data.cpp
+│   │   ├── for_loop.cpp
+│   │   ├── operator.bool.cpp
+│   │   ├── operator.subscript.cpp
+│   │   ├── size.cpp
+│   │   ├── slice.cpp
+│   │   └── test_policy.h
+│   ├── bounded_array_src
+│   │   ├── begin_end.cpp
+│   │   ├── ctor.aggregate_init.cpp
+│   │   ├── ctor.default.cpp
+│   │   ├── data.cpp
+│   │   ├── for_loop.cpp
+│   │   ├── operator.subscript.cpp
+│   │   ├── size.cpp
+│   │   └── test_policy.h
+│   ├── bounded_ptr.cpp
+│   ├── bounded_ptr_03.cpp
+│   ├── bounded_ptr_src
+│   │   ├── arith.add.cpp
+│   │   ├── arith.add_assign.cpp
+│   │   ├── arith.difference.cpp
+│   │   ├── arith.inc_dec.cpp
+│   │   ├── arith.subtract.cpp
+│   │   ├── arith.subtract_assign.cpp
+│   │   ├── assign.convert.cpp
+│   │   ├── assign.nullptr.cpp
+│   │   ├── compare.equal.cpp
+│   │   ├── compare.equal.nullptr.cpp
+│   │   ├── compare.equal.raw.cpp
+│   │   ├── compare.order.cpp
+│   │   ├── compare.order.raw.cpp
+│   │   ├── ctor.begin_end.cpp
+│   │   ├── ctor.convert.cpp
+│   │   ├── ctor.default.cpp
+│   │   ├── ctor.nullptr.cpp
+│   │   ├── deref.cpp
+│   │   ├── discard_bounds.cpp
+│   │   ├── example.malloc.cpp
+│   │   ├── operator_bool.cpp
+│   │   ├── reinterpret_cast.cpp
+│   │   ├── subscript.cpp
+│   │   ├── test_utils.h
+│   │   └── unsafe_discard_bounds.cpp
+│   ├── bpflib.c
+│   ├── bpflib.h
+│   ├── coalition_info_tests.c
+│   ├── codesigntests-entitlements.plist
+│   ├── codesigntests.c
+│   ├── contextswitch.c
+│   ├── correct_kernel_booted.c
+│   ├── counter
+│   │   ├── benchmark.c
+│   │   ├── benchmark.lua
+│   │   ├── common.c
+│   │   ├── common.h
+│   │   └── counter.c
+│   ├── cpucount.c
+│   ├── data_protection.c
+│   ├── debug_control_port_for_pid.c
+│   ├── debug_control_port_for_pid_entitlement.plist
+│   ├── debug_enable_syscall_rejection.c
+│   ├── decompression_failure.c
+│   ├── dev_zero.c
+│   ├── disk_mount_conditioner-entitlements.plist
+│   ├── disk_mount_conditioner.c
+│   ├── driverkit
+│   │   └── Makefile
+│   ├── drop_priv.c
+│   ├── drop_priv.h
+│   ├── entropy.c
+│   ├── exc_helpers.c
+│   ├── exc_helpers.h
+│   ├── exc_resource_threads.c
+│   ├── exception_ports_info.c
+│   ├── exception_tests.c
+│   ├── exception_tests.entitlements
+│   ├── excserver.defs
+│   ├── excserver_protect.defs
+│   ├── exec-race-58566604.c
+│   ├── extended_getdirentries64.c
+│   ├── extract_right_soft_fail.c
+│   ├── fcntl.c
+│   ├── fd.c
+│   ├── fd_aio_fsync_uaf.c
+│   ├── fd_guarded.c
+│   ├── fd_send.c
+│   ├── fd_table_limits.c
+│   ├── fd_table_limits_client.c
+│   ├── fduiomove.c
+│   ├── flow_div_doubleconnect_55917185.c
+│   ├── fp_exception.c
+│   ├── freebsd_waitpid_nohang.c
+│   ├── ftruncate.c
+│   ├── get_shared_cache_address.c
+│   ├── gettimeofday.c
+│   ├── gettimeofday_29192647.c
+│   ├── hazard.c
+│   ├── host_notifications.c
+│   ├── host_statistics_rate_limiting.c
+│   ├── hvbench.c
+│   ├── hvtest_x86.m
+│   ├── hvtest_x86_asm.s
+│   ├── hvtest_x86_guest.c
+│   ├── hvtest_x86_guest.h
+│   ├── hw_breakpoint_step_arm64.c
+│   ├── icmp_fragmented_payload.c
+│   ├── imm_pinned_control_port.c
+│   ├── imm_pinned_control_port_crasher.c
+│   ├── immovable_rights.c
+│   ├── immovable_send.c
+│   ├── immovable_send_client.c
+│   ├── in_cksum.c
+│   ├── in_cksum.h
+│   ├── in_cksum_test.c
+│   ├── inet_transfer.c
+│   ├── inet_transfer.h
+│   ├── int_time.c
+│   ├── intrusive_shared_ptr.cpp
+│   ├── intrusive_shared_ptr_src
+│   │   ├── abi.callee.raw.cpp
+│   │   ├── abi.callee.smart.cpp
+│   │   ├── abi.caller.raw.cpp
+│   │   ├── abi.caller.smart.cpp
+│   │   ├── abi.size_alignment.cpp
+│   │   ├── abi_helper.h
+│   │   ├── assign.copy.cpp
+│   │   ├── assign.move.cpp
+│   │   ├── assign.nullptr.cpp
+│   │   ├── cast.const.cpp
+│   │   ├── cast.reinterpret.cpp
+│   │   ├── cast.static.cpp
+│   │   ├── compare.equal.cpp
+│   │   ├── compare.equal.nullptr.cpp
+│   │   ├── compare.equal.raw.cpp
+│   │   ├── ctor.copy.cpp
+│   │   ├── ctor.default.cpp
+│   │   ├── ctor.move.cpp
+│   │   ├── ctor.nullptr.cpp
+│   │   ├── ctor.ptr.no_retain.cpp
+│   │   ├── ctor.ptr.retain.cpp
+│   │   ├── deref.cpp
+│   │   ├── detach.cpp
+│   │   ├── dtor.cpp
+│   │   ├── get.cpp
+│   │   ├── operator.bool.cpp
+│   │   ├── reset.cpp
+│   │   ├── reset.no_retain.cpp
+│   │   ├── reset.retain.cpp
+│   │   ├── swap.cpp
+│   │   └── test_policy.h
+│   ├── invalid_setaudit_57414044.c
+│   ├── ioc_str.h
+│   ├── ioconnectasyncmethod_57641955.c
+│   ├── iokit
+│   │   ├── io_catalog_send_data.m
+│   │   ├── ioserviceusernotification_race.c
+│   │   ├── ioserviceusernotification_race.entitlements
+│   │   ├── map_memory_port_leak_45265408.c
+│   │   ├── map_memory_port_leak_45265408.entitlements
+│   │   ├── port_object_description_race_77259918.c
+│   │   ├── rosetta_map_mmio.c
+│   │   ├── rosetta_map_mmio.entitlements
+│   │   ├── service_helpers.c
+│   │   └── service_helpers.h
+│   ├── ioperf.c
+│   ├── ipc
+│   │   ├── kernel_signed_pac_thread_state.c
+│   │   ├── pac_exception_entitlement.plist
+│   │   ├── port_turnstile_stash.c
+│   │   └── waitq.c
+│   ├── ipc_mach_port.c
+│   ├── ipc_read_inspect.c
+│   ├── ipc_thread_ports_race.c
+│   ├── ipsec.entitlements
+│   ├── ipsec.m
+│   ├── jumbo_va_spaces_28530648-identifier.plist
+│   ├── jumbo_va_spaces_28530648.c
+│   ├── jumbo_va_spaces_28530648.entitlements
+│   ├── jumbo_va_spaces_52551256.entitlements
+│   ├── jumbo_va_spaces_common.c
+│   ├── jumbo_va_spaces_common.h
+│   ├── kalloc.c
+│   ├── kas_info.c
+│   ├── kernel_inspection.c
+│   ├── kernel_symbolication_entitlements.plist
+│   ├── kevent_continuous_time.c
+│   ├── kevent_pty.c
+│   ├── kevent_qos.c
+│   ├── kqueue_add_and_trigger.c
+│   ├── kqueue_close.c
+│   ├── kqueue_fifo_18776047.c
+│   ├── kqueue_file_tests.c
+│   ├── kqueue_in_select.c
+│   ├── kqueue_port_tests.c
+│   ├── kqueue_timer_tests.c
+│   ├── ktrace
+│   │   ├── kdebug_coproc_tests.c
+│   │   ├── kdebug_tests.c
+│   │   ├── kpc_tests.c
+│   │   ├── kperf_backtracing_tests.c
+│   │   ├── kperf_helpers.c
+│   │   ├── kperf_helpers.h
+│   │   ├── kperf_tests.c
+│   │   ├── ktrace_helpers.h
+│   │   └── ktrace_meta.h
+│   ├── launchd_plists
+│   │   ├── com.apple.xnu.test.kevent_qos.plist
+│   │   ├── com.apple.xnu.test.mach_port.plist
+│   │   └── com.apple.xnu.test.turnstile_multihop.plist
+│   ├── ldt.c
+│   ├── ldt_code32.s
+│   ├── ldt_entitlement.plist
+│   ├── legacy_footprint.entitlement
+│   ├── lockf_EOF_77264182.c
+│   ├── mach_boottime_usec.c
+│   ├── mach_continuous_time.c
+│   ├── mach_eventlink.c
+│   ├── mach_exc.defs
+│   ├── mach_exception_reply.c
+│   ├── mach_get_times.c
+│   ├── mach_port_deallocate_21692215.c
+│   ├── mach_port_insert_right.c
+│   ├── mach_port_mod_refs.c
+│   ├── mach_service_port.c
+│   ├── mach_timebase_info.c
+│   ├── macho_size_63133398.c
+│   ├── manual_wq_cooperative.c
+│   ├── mcast_group_race_82820812.c
+│   ├── memcmp_zero.c
+│   ├── memorystatus_assertion_helpers.c
+│   ├── memorystatus_assertion_helpers.h
+│   ├── memorystatus_freeze_test.c
+│   ├── memorystatus_is_assertion.c
+│   ├── memorystatus_vm_map_fork.c
+│   ├── memorystatus_zone_test.c
+│   ├── microstackshot_tests.c
+│   ├── mktimer_kobject.c
+│   ├── mo_immovable_receive.c
+│   ├── monotonic_core.c
+│   ├── monotonic_uncore.c
+│   ├── mpsc.c
+│   ├── net_bridge.c
+│   ├── net_tun_pr_35136664.c
+│   ├── net_tuntests.c
+│   ├── netagent_kctl_header_infodisc_56190773.c
+│   ├── netagent_race_infodisc_56244905.c
+│   ├── netbsd_utimensat.c
+│   ├── network_entitlements.plist
+│   ├── notifyserver.defs
+│   ├── ntp_adjtime_29192647.c
+│   ├── os_atomic.cpp
+│   ├── os_proc.c
+│   ├── os_refcnt.c
+│   ├── os_thread_self_restrict-identifier.plist
+│   ├── os_unaligned.c
+│   ├── osptr_compat.cpp
+│   ├── perf_compressor.c
+│   ├── perf_exit.c
+│   ├── perf_exit_proc.c
+│   ├── perf_spawn_fork.c
+│   ├── perf_vmfault.c
+│   ├── perfmon_tests.c
+│   ├── perfmon_unit_tests.c
+│   ├── pfkey.c
+│   ├── pfz.c
+│   ├── phys_footprint_interval_max.c
+│   ├── pid_for_task_test.c
+│   ├── pipe_drain.c
+│   ├── pipe_kevent.c
+│   ├── pipe_read_infloop_55437634.c
+│   ├── pmap_bench.c
+│   ├── poll.c
+│   ├── poll_select_kevent_paired_fds.c
+│   ├── port_descriptions.c
+│   ├── port_exhaustion.c
+│   ├── port_exhaustion_client.c
+│   ├── port_table_limits.c
+│   ├── port_table_limits_client.c
+│   ├── posix_spawn_alt_rosetta.c
+│   ├── posix_spawn_alt_rosetta_helper.c
+│   ├── posix_spawn_archpref.c
+│   ├── posix_spawn_archpref_helper.c
+│   ├── posix_spawn_file_actions.c
+│   ├── posix_spawn_file_actions_add_fileportdup2_np.c
+│   ├── posix_spawn_filtering.c
+│   ├── posix_spawn_posix_cred.c
+│   ├── pread.c
+│   ├── preoslog.c
+│   ├── print_apple_array.c
+│   ├── prioritize_process_launch.c
+│   ├── prioritize_process_launch_helper.c
+│   ├── priority_queue.cpp
+│   ├── private_entitlement.plist
+│   ├── prng.c
+│   ├── proc_core_name_24152432.c
+│   ├── proc_info.c
+│   ├── proc_info_44873309.c
+│   ├── proc_info_44873309.entitlements
+│   ├── proc_info_list_kthreads.c
+│   ├── proc_info_list_kthreads.entitlements
+│   ├── proc_info_udata.c
+│   ├── proc_pidpath_audittoken.c
+│   ├── proc_rlimit.c
+│   ├── proc_uuid_policy_26567533.c
+│   ├── processor_info.c
+│   ├── ptrauth-entitlements.plist
+│   ├── ptrauth_data_tests.c
+│   ├── ptrauth_failure.c
+│   ├── pwrite.c
+│   ├── pwrite_avoid_sigxfsz_28581610.c
+│   ├── quiesce_counter.c
+│   ├── readonly_proc_tests.c
+│   ├── recvmsg_x_test.c
+│   ├── regression_17272465.c
+│   ├── remote_time.c
+│   ├── rename_excl.c
+│   ├── restart.c
+│   ├── restrict_jit.c
+│   ├── restrict_jit.entitlements
+│   ├── rm
+│   │   └── pthread_setugid.c
+│   ├── rnserver.defs
+│   ├── route_output_stack_oflow_56033075.c
+│   ├── rump.h
+│   ├── rusage_tests.c
+│   ├── safe_allocation.cpp
+│   ├── safe_allocation_src
+│   │   ├── assign.copy.cpp
+│   │   ├── assign.move.cpp
+│   │   ├── assign.nullptr.cpp
+│   │   ├── begin_end.cpp
+│   │   ├── compare.equal.nullptr.cpp
+│   │   ├── ctor.adopt.cpp
+│   │   ├── ctor.allocate.cpp
+│   │   ├── ctor.allocate_zero.cpp
+│   │   ├── ctor.copy.cpp
+│   │   ├── ctor.default.cpp
+│   │   ├── ctor.move.cpp
+│   │   ├── ctor.nullptr.cpp
+│   │   ├── data.cpp
+│   │   ├── dtor.cpp
+│   │   ├── operator.bool.cpp
+│   │   ├── operator.subscript.cpp
+│   │   ├── size.cpp
+│   │   ├── swap.cpp
+│   │   ├── test_utils.h
+│   │   ├── usage.for_loop.cpp
+│   │   └── usage.two_dimensions.cpp
+│   ├── sbuf_tests.c
+│   ├── scanf.c
+│   ├── sched_cluster_bound_threads.c
+│   ├── scm_rights_leak.c
+│   ├── select_stress.c
+│   ├── settimeofday_29193041.c
+│   ├── settimeofday_29193041.entitlements
+│   ├── settimeofday_29193041_entitled.c
+│   ├── shared_cache_reslide_test.c
+│   ├── shared_cache_tests.c
+│   ├── sigchld_return.c
+│   ├── sigcont_return.c
+│   ├── signal_stack.c
+│   ├── sioc-if-addr-bounds.c
+│   ├── socket_0byte_udp_poll_58140856.c
+│   ├── socket_bind_35243417.c
+│   ├── socket_bind_35685803.c
+│   ├── socket_poll_close_25786011.c
+│   ├── socket_raw_uint8_max.c
+│   ├── socket_v4mappedv6.c
+│   ├── sr_entitlement.c
+│   ├── sr_entitlement.entitlements
+│   ├── sr_entitlement_helper.c
+│   ├── ssbs.c
+│   ├── stack_chk_tests.c
+│   ├── stackshot_accuracy.m
+│   ├── stackshot_block_owner_14362384.m
+│   ├── stackshot_idle_25570396.m
+│   ├── stackshot_spawn_exit_stress.c
+│   ├── stackshot_tests.m
+│   ├── stackshot_translated_child.c
+│   ├── subsystem_root_path-entitlements.plist
+│   ├── subsystem_root_path.c
+│   ├── subsystem_root_path.h
+│   ├── subsystem_root_path_helper.c
+│   ├── suspended_spawn_26184412.c
+│   ├── sysctl_get_owned_vmobjects.c
+│   ├── sysctl_hw.c
+│   ├── sysctl_system_version.c
+│   ├── sysctl_wire_limits.c
+│   ├── task_fatal_port.c
+│   ├── task_filter_msg.c
+│   ├── task_for_pid_entitlement.plist
+│   ├── task_ident_test.c
+│   ├── task_info.c
+│   ├── task_info_28439149.c
+│   ├── task_is_self.c
+│   ├── task_policy.c
+│   ├── task_policy_entitlement.plist
+│   ├── task_vm_info_decompressions.c
+│   ├── tcp_bind_connect.c
+│   ├── tcp_input_outputopts_uaf_56155583.c
+│   ├── test_note_exec.c
+│   ├── test_static_binary_csflags.c
+│   ├── test_sysctl_kern_procargs_25397314.m
+│   ├── test_utils.c
+│   ├── test_utils.h
+│   ├── testposixshm.c
+│   ├── text_corruption.c
+│   ├── text_corruption_helper.c
+│   ├── thread_call_race_71455282.c
+│   ├── thread_group_set_32261625.c
+│   ├── thread_set_state_arm64_cpsr.c
+│   ├── time.c
+│   ├── trial_experiments.c
+│   ├── trial_experiments.entitlements
+│   ├── troll.c
+│   ├── tty_hang.c
+│   ├── turnstile_multihop.c
+│   ├── turnstile_multihop_helper.h
+│   ├── turnstile_multihop_types.h
+│   ├── turnstiles_test.c
+│   ├── udp_kao_opt.c
+│   ├── uipc_uaf.c
+│   ├── ulock.c
+│   ├── unp_connect_thread_uaf.c
+│   ├── unp_externalize_fd_alloc.c
+│   ├── user_msrs.c
+│   ├── utimensat.c
+│   ├── v4mappedv6_recvpktinfo.c
+│   ├── verify_kalloc_config.c
+│   ├── vm
+│   │   ├── analytics.c
+│   │   ├── compression_sweep.c
+│   │   ├── entitlement_increased_memory_limit.c
+│   │   ├── entitlement_increased_memory_limit.entitlements
+│   │   ├── fault_throughput.c
+│   │   ├── fault_throughput.lua
+│   │   ├── fault_throughput.plist
+│   │   ├── kern_max_task_pmem.c
+│   │   ├── memorystatus_sort_test.c
+│   │   ├── mixed_pagesize.c
+│   │   ├── mixed_pagesize.plist
+│   │   ├── mmap_resilient_media.c
+│   │   ├── page_size_globals.c
+│   │   ├── panic.c
+│   │   ├── perf_madvise.c
+│   │   ├── perf_madvise.lua
+│   │   ├── retired_pages.c
+│   │   ├── vm_allocation.c
+│   │   ├── vm_sysctl_tests.c
+│   │   ├── vm_test_90774260.c
+│   │   ├── vm_test_cow_before_zf_read.c
+│   │   ├── zalloc.c
+│   │   ├── zalloc_buddy.c
+│   │   └── zone_gc_replenish_test.c
+│   ├── vm_kern_count_wired_kernelcache.c
+│   ├── vm_memory_tests_src
+│   │   ├── common.c
+│   │   ├── mach_vm_tests.h
+│   │   ├── main.c
+│   │   ├── server.c
+│   │   └── vm_tests.c
+│   ├── vm_phys_footprint.c
+│   ├── vm_set_max_addr_helper.c
+│   ├── vm_set_max_addr_test.c
+│   ├── vm_spawn_tool.c
+│   ├── vm_test_code_signing_helper.c
+│   ├── vm_test_mach_map.c
+│   ├── voucher_entry_18826844.c
+│   ├── voucher_traps.c
+│   ├── vsock.c
+│   ├── work_interval_test.c
+│   ├── work_interval_test.entitlements
+│   ├── work_interval_test_unentitled.c
+│   ├── workq
+│   │   ├── workq_83476290.c
+│   │   └── workq_sigprof.c
+│   ├── workqueue.plist
+│   ├── workqueue_cooperative.c
+│   ├── x18.c
+│   ├── xnu_quick_test.c
+│   ├── xnu_quick_test_getsetpriority.c
+│   ├── xnu_quick_test_helpers.c
+│   ├── xnu_quick_test_helpers.h
+│   └── zero_to_n_tests.c
+├── tools
+│   ├── Makefile
+│   ├── cocci
+│   │   ├── OSAtomic_rewrite.cocci
+│   │   ├── c11_atomic_builtin_rewrite.cocci
+│   │   ├── hw_atomic_rewrite.cocci
+│   │   ├── mcache_atomic_rewrite.cocci
+│   │   ├── os_atomic_normalize.cocci
+│   │   ├── zalloc-data.cocci
+│   │   ├── zalloc-nofail.cocci
+│   │   ├── zalloc-zero.cocci
+│   │   └── zalloc.iso
+│   ├── cred_dump_backtraces.c
+│   ├── cred_dump_creds.c
+│   ├── entropy_health_test_bounds.py
+│   ├── kt-dump
+│   │   ├── Makefile
+│   │   └── kt-dump.cpp
+│   ├── lldbmacros
+│   │   ├── Makefile
+│   │   ├── README.md
+│   │   ├── apic.py
+│   │   ├── bank.py
+│   │   ├── btlog.py
+│   │   ├── core
+│   │   │   ├── __init__.py
+│   │   │   ├── caching.py
+│   │   │   ├── compat.py
+│   │   │   ├── configuration.py
+│   │   │   ├── cvalue.py
+│   │   │   ├── io.py
+│   │   │   ├── kernelcore.py
+│   │   │   ├── lazytarget.py
+│   │   │   ├── operating_system.py
+│   │   │   ├── standard.py
+│   │   │   ├── syntax_checker.py
+│   │   │   └── xnu_lldb_init.py
+│   │   ├── coreanalytics.py
+│   │   ├── counter.py
+│   │   ├── ioreg.py
+│   │   ├── ipc.py
+│   │   ├── ipcimportancedetail.py
+│   │   ├── kasan.py
+│   │   ├── kauth.py
+│   │   ├── kcdata.py
+│   │   ├── kdp.py
+│   │   ├── kevent.py
+│   │   ├── kext.py
+│   │   ├── ktrace.py
+│   │   ├── macho.py
+│   │   ├── mbufdefines.py
+│   │   ├── mbufs.py
+│   │   ├── memory.py
+│   │   ├── misc.py
+│   │   ├── net.py
+│   │   ├── netdefines.py
+│   │   ├── ntstat.py
+│   │   ├── pci.py
+│   │   ├── plugins
+│   │   │   ├── __init__.py
+│   │   │   ├── iosspeedtracer.py
+│   │   │   ├── iosspeedtracer.sh
+│   │   │   ├── speedtracer.py
+│   │   │   └── zprint_perf_log.py
+│   │   ├── pmap.py
+│   │   ├── process.py
+│   │   ├── refgrp.py
+│   │   ├── routedefines.py
+│   │   ├── scheduler.py
+│   │   ├── skywalk.py
+│   │   ├── structanalyze.py
+│   │   ├── sysreg.py
+│   │   ├── sysregdoc
+│   │   │   └── AArch64-esr_el1.xml
+│   │   ├── turnstile.py
+│   │   ├── ulock.py
+│   │   ├── userspace.py
+│   │   ├── usertaskdebugging
+│   │   │   ├── __init__.py
+│   │   │   ├── gdbserver.py
+│   │   │   ├── interface.py
+│   │   │   ├── rsprotocol.py
+│   │   │   ├── target.py
+│   │   │   └── userprocess.py
+│   │   ├── usertaskgdbserver.py
+│   │   ├── utils.py
+│   │   ├── waitq.py
+│   │   ├── workqueue.py
+│   │   ├── xnu.py 
+│   │   ├── xnudefines.py
+│   │   ├── xnutriage.py
+│   │   └── zonetriage.py
+│   ├── lockstat
+│   │   ├── Makefile
+│   │   └── lockstat.c
+│   ├── remote_build.sh
+│   ├── symbolify.py
+│   ├── tests
+│   │   ├── MPMMTest
+│   │   │   ├── KQMPMMtest.c
+│   │   │   ├── MPMMtest.c
+│   │   │   ├── MPMMtest_run.sh
+│   │   │   ├── Makefile
+│   │   │   └── README
+│   │   ├── Makefile
+│   │   ├── Makefile.common
+│   │   ├── TLBcoherency
+│   │   │   ├── Makefile
+│   │   │   └── TLBcoherency.c
+│   │   ├── affinity
+│   │   │   ├── Makefile
+│   │   │   ├── pool.c
+│   │   │   ├── sets.c
+│   │   │   └── tags.c
+│   │   ├── execperf
+│   │   │   ├── Makefile
+│   │   │   ├── exit-asm.S
+│   │   │   ├── exit.c
+│   │   │   ├── printexecinfo.c
+│   │   │   ├── run.c
+│   │   │   └── test.sh
+│   │   ├── jitter
+│   │   │   ├── Makefile
+│   │   │   └── timer_jitter.c
+│   │   ├── kernpost_test_report
+│   │   │   ├── Makefile
+│   │   │   └── kernpost_test_report.lua
+│   │   ├── mktimer
+│   │   │   ├── Makefile
+│   │   │   └── mktimer_test.c
+│   │   ├── perf_index
+│   │   │   ├── Makefile
+│   │   │   ├── PerfIndex_COPS_Module
+│   │   │   │   ├── Info.plist
+│   │   │   │   ├── PITest.h
+│   │   │   │   ├── PITest.m
+│   │   │   │   ├── PerfIndex.h
+│   │   │   │   ├── PerfIndex.xcodeproj
+│   │   │   │   │   └── project.pbxproj
+│   │   │   │   └── Prefix.pch
+│   │   │   ├── README
+│   │   │   ├── fail.h
+│   │   │   ├── md5.c
+│   │   │   ├── md5.h
+│   │   │   ├── perf_index.c
+│   │   │   ├── perf_index.h
+│   │   │   ├── perfindex-compile.c
+│   │   │   ├── perfindex-cpu.c
+│   │   │   ├── perfindex-fault.c
+│   │   │   ├── perfindex-file_create.c
+│   │   │   ├── perfindex-file_read.c
+│   │   │   ├── perfindex-file_write.c
+│   │   │   ├── perfindex-iperf.c
+│   │   │   ├── perfindex-memory.c
+│   │   │   ├── perfindex-ram_file_create.c
+│   │   │   ├── perfindex-ram_file_read.c
+│   │   │   ├── perfindex-ram_file_write.c
+│   │   │   ├── perfindex-syscall.c
+│   │   │   ├── perfindex-zfod.c
+│   │   │   ├── ramdisk.c
+│   │   │   ├── ramdisk.h
+│   │   │   ├── test_controller.py
+│   │   │   ├── test_fault_helper.c
+│   │   │   ├── test_fault_helper.h
+│   │   │   ├── test_file_helper.c
+│   │   │   └── test_file_helper.h
+│   │   ├── personas
+│   │   │   ├── Makefile
+│   │   │   ├── persona-entitlements.plist
+│   │   │   ├── persona_mgr.c
+│   │   │   ├── persona_spawn.c
+│   │   │   ├── persona_test.h
+│   │   │   └── persona_test_run_src.sh
+│   │   ├── superpages
+│   │   │   ├── Makefile
+│   │   │   ├── measure_tlbs.c
+│   │   │   └── testsp.c
+│   │   ├── testkext
+│   │   │   ├── pgokext
+│   │   │   │   ├── Info.plist
+│   │   │   │   └── pgokext.c
+│   │   │   ├── testkext.xcodeproj
+│   │   │   │   └── project.pbxproj
+│   │   │   ├── testthreadcall-Info.plist
+│   │   │   ├── testthreadcall.cpp
+│   │   │   ├── testthreadcall.h
+│   │   │   ├── testvmx-Info.plist
+│   │   │   ├── testvmx.cpp
+│   │   │   └── testvmx.h
+│   │   └── zero-to-n
+│   │       ├── Makefile
+│   │       └── zero-to-n.c
+│   ├── trace
+│   │   ├── bridgetime.lua
+│   │   ├── ios_trace_ipc.sh
+│   │   ├── kqtrace.lua
+│   │   ├── ktruss.lua
+│   │   ├── parse_ipc_trace.py
+│   │   ├── pirate.lua
+│   │   └── wqtrace.lua
+│   └── xcrun_cache.sh
+├── trash.asm
+├── vcpkg-configuration.json
+├── xnu-image.png
+└── ıo.test.txt
+
