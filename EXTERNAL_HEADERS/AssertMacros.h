@@ -1,15 +1,15 @@
 /*
  * Copyright (c) 2002-2008 by Apple Inc.. All rights reserved.
  *
- * @APPLE_LICENSE_HEADER_START@
+ * @APPLE_LICENSE_HEADER_START@ 
  * 
  * This file contains Original Code and/or Modifications of Original Code
  * as defined in and that are subject to the Apple Public Source License
- * Version 2.0 (the 'License'). You may not use this file except in
+ * Version 2.0 (the 'License'). You may not use t his file except in
  * compliance with the License. Please obtain a copy of the License at
  * http://www.opensource.apple.com/apsl/ and read it before using this
  * file.
- * 
+ *  
  * The Original Code and all software distributed under the License are
  * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
  * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
@@ -24,7 +24,7 @@
 
 /*
 	File:       AssertMacros.h
- 
+  
 	Contains:   This file defines structured error handling and assertion macros for
 				programming in C. Originally used in QuickDraw GX and later enhanced.
 				These macros are used throughout Apple's software.
@@ -40,7 +40,7 @@
 	
 	Bugs?:      For bug reports, consult the following page on
 				the World Wide Web:
-
+ 
 	 http://developer.apple.com/bugreporter/ 
 */
 #ifndef __ASSERTMACROS__

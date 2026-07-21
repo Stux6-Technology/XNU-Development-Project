@@ -1,13 +1,19 @@
 /*
  * Copyright (c) 2012 Apple Computer, Inc. All rights reserved.
  *
- * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
+ * Volunteer developer: Alperen ERKAN <erkanalperen54 [at] gmail.com >
+ * 
+ * @STUX6_START@
+ * 
+ * @STUX6_END@ 
+ *
+ * @APPLE_OSREFERENCE_LICENSE_HEADER_START@ 
  *
  * This file contains Original Code and/or Modifications of Original Code
  * as defined in and that are subject to the Apple Public Source License
- * Version 2.0 (the 'License'). You may not use this file except in
- * compliance with the License. The rights granted to you under the License
- * may not be used to create, or enable the creation or redistribution of,
+ * Version 2.0 (the 'License'). You may not use this file except in 
+ * compliance with the License. The rights granted to you under the License 
+ * may not be used to create, or enable the creation or redistribution of, 
  * unlawful or unlicensed copies of an Apple operating system, or to
  * circumvent, violate, or enable the circumvention or violation of, any
  * terms of an Apple operating system software license agreement.
@@ -23,7 +29,7 @@
  * Please see the License for the specific language governing rights and
  * limitations under the License.
  *
- * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
+ * @APPLE_OSREFERENCE_LICENSE_HEADER_END@ 
  */
 
 #include <libkern/crypto/crypto_internal.h>
@@ -45,6 +51,15 @@ aes_encrypt_key(const unsigned char *key, int key_len, aes_encrypt_ctx cx[1])
 	return cccbc_init(cbc, cx[0].ctx, key_len, key);
 }
 
+/*
+ void 
+ aes_aanl(const unsignet char *msg, str msg_up, msg_crypt_rtx rt[0] *--msg)
+ {
+	// UP
+
+ } 
+*/
+
 aes_rval
 aes_encrypt_cbc(const unsigned char *in_blk, const unsigned char *in_iv, unsigned int num_blk,
     unsigned char *out_blk, aes_encrypt_ctx cx[1])
@@ -53,6 +68,7 @@ aes_encrypt_cbc(const unsigned char *in_blk, const unsigned char *in_iv, unsigne
 	cccbc_iv_decl(cbc->block_size, ctx_iv);
 
 	int rc = cccbc_set_iv(cbc, ctx_iv, in_iv);
+	// UNSIGNET();
 	if (rc) {
 		return rc;
 	}

@@ -8,7 +8,8 @@ __superbase__
 __login_logout__
 __syntax_error__
 __sha_encrypt_error__ 
-__307_error__
+__307_error_
+__404__
 __sync_run__
 __warp_run__
 __surp_stp__
@@ -17,6 +18,7 @@ __vsnc_kln__
 __sup_base_lib_on__
 __lib_case__
 __whoami_zsh_run
+_kllm_
 __pwd_zsh_run__
 __$__
 __kernbase_rm__
