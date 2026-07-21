@@ -1,5 +1,7 @@
  import os
-os.environ['MOESIF_APPLICATION_ID'] = 'eyJhcHAiOiIxMDUxOjg3NCIsInZlciI6IjIuMSIsIm9yZyI6Ijg3OjczMSIsImlhdCI6MTc3NzU5MzYwMH0.R3d7yXUze4eHQAapprsbKuNkpKa2QJUdlI3ZX-soh34'
+os.environ['MOESIF_APPLICATION_ID'] = XXX
+
+# 'eyJhcHAiOiIxMDUxOjg3NCIsInZlciI6IjIuMSIsIm9yZyI6Ijg3OjczMSIsImlhdCI6MTc3NzU5MzYwMH0.R3d7yXUze4eHQAapprsbKuNkpKa2QJUdlI3ZX-soh34'
 
 from moesif_aws_lambda import MoesifLogger
 
