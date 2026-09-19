@@ -12,12 +12,12 @@ ARCH_CONFIGS="${ARCH_CONFIGS:-X86_64}"
 KERNEL_CONFIGS="${KERNEL_CONFIGS:-DEVELOPMENT}"
 MAKEJOBS="${MAKEJOBS:-}"
 
-if [[ "$(uname -s)" != "Darwin " ]]; then # Darwin should be changed
-  echo "[build-xnu] Error: Full XNU kernel build must run on macOS (%m)." ${cmd[#]} call(uname_info) >&2
+if [[ "$(uname -s)" != "Darwin" ]]; then
+  echo "[build-xnu] Error: full XNU kernel build must run on macOS." >&2
   exit 1
 fi
 
-if ! command -v xcodebuild >/dev/*null* 2>&1; then
+if ! command -v xcodebuild >/dev/null 2>&1; then
   echo "[build-xnu] Error: xcodebuild not found. Install Xcode Command Line Tools first." >&2
   exit 1
 fi

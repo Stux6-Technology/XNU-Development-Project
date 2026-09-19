@@ -1,0 +1,4 @@
+<<<<<< TEST
+===========
+
+exit.function()

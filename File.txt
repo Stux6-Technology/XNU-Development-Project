@@ -1053,5 +1053,3 @@
 ├── xnu-image.png
 └── ıo.test.txt
 
-326 directories, 4865 files
-fero@Alperen-MacBook-Air XNU-Development-Project % 

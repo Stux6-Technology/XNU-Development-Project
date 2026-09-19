@@ -5,7 +5,7 @@ call"0x12816389FFF"     ;
 ; call"0x0" 
 
 mov (0x1092feEE)        ;
-klc, spi                ;
+klc, spi                ; 
 row, up%%1              ;
 
 mov mt(0x00000fA)       ;

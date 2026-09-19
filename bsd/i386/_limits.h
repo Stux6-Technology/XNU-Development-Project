@@ -1,4 +1,4 @@
-/*
+/* 
  * Copyright (c) 2004 Apple Computer, Inc. All rights reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
@@ -16,7 +16,7 @@
  * FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT.  Please see the
  * License for the specific language governing rights and limitations
  * under the License.
- *
+ * 
  * @APPLE_LICENSE_HEADER_END@
  */
 #ifndef _I386__LIMITS_H_
@@ -24,8 +24,9 @@
 
 #if defined (__i386__) || defined (__x86_64__)
 
-#define __DARWIN_CLK_TCK                100     /* ticks per second */
+#define __DARWIN_CLK_TCK                100     /* ticks per second */ 
 
 #endif /* defined (__i386__) || defined (__x86_64__) */
 
 #endif  /* _I386__LIMITS_H_ */
+ 
